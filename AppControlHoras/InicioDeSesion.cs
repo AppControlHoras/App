@@ -37,11 +37,13 @@ namespace AppControlHoras
                         MenuPrincipal principal = new MenuPrincipal();
                         this.Hide();
                         principal.Show();
-
-                        principal.FormClosing += new FormClosingEventHandler(Form_FormClosing);
-
                         TbUser.Clear();
                         TbPswd.Clear();
+
+                        principal.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+                        
+
+                        
                     }
                     else
                     {

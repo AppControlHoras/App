@@ -64,6 +64,7 @@
             // TbUser
             // 
             this.TbUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TbUser.BackColor = System.Drawing.Color.White;
             this.TbUser.Location = new System.Drawing.Point(207, 189);
             this.TbUser.Name = "TbUser";
             this.TbUser.Size = new System.Drawing.Size(100, 20);
@@ -92,8 +93,10 @@
             // 
             this.BtInicioSesion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BtInicioSesion.BackColor = System.Drawing.SystemColors.Control;
-            this.BtInicioSesion.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.BtInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BtInicioSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.BtInicioSesion.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.BtInicioSesion.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BtInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtInicioSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BtInicioSesion.Location = new System.Drawing.Point(172, 271);
             this.BtInicioSesion.Name = "BtInicioSesion";

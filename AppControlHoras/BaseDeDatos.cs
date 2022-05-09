@@ -23,16 +23,14 @@ namespace AppControlHoras
             SqlParameter UserParameter = new SqlParameter("@user", user);
             SqlParameter NameParameter = new SqlParameter("@pswd", pswd);
 
-            SqlCommand command = new SqlCommand("SELECT ID_EMPLEADO, Usuario, Password FROM Empleados WHERE Usuario = @user AND Password = @pswd", Conexion);
+            SqlCommand command = new SqlCommand("SELECT Usuario, Password FROM Empleados WHERE Usuario = @user AND Password = @pswd", Conexion);
             command.Parameters.Add(UserParameter);
             command.Parameters.Add(NameParameter);
 
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Id = reader.GetInt32(Convert.ToInt32(reader.GetString(0)));
                 Username = reader.GetString(1);
-
             }
 
             reader.Close();
