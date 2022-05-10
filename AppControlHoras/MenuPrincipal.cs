@@ -38,8 +38,6 @@ namespace AppControlHoras
 
         private void BtAdmin_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Administracion", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            this.Show();
             MenuAdministracion menuAdministracion = new MenuAdministracion();
             this.Hide();
             menuAdministracion.Show();

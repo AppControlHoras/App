@@ -72,6 +72,12 @@
     <Compile Include="Cuentas.Designer.cs">
       <DependentUpon>Cuentas.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistorialdeImputaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistorialdeImputaciones.Designer.cs">
+      <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="InicioDeSesion.cs">
       <SubType>Form</SubType>
@@ -95,6 +101,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Cuentas.resx">
       <DependentUpon>Cuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialdeImputaciones.resx">
+      <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioDeSesion.resx">
       <DependentUpon>InicioDeSesion.cs</DependentUpon>

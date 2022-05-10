@@ -69,6 +69,7 @@
             // 
             this.TbUser.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.TbUser.BackColor = System.Drawing.Color.White;
+            this.TbUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TbUser.Location = new System.Drawing.Point(207, 213);
             this.TbUser.Name = "TbUser";
             this.TbUser.Size = new System.Drawing.Size(100, 20);
@@ -77,12 +78,12 @@
             // TbPswd
             // 
             this.TbPswd.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.TbPswd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TbPswd.Location = new System.Drawing.Point(207, 252);
             this.TbPswd.Name = "TbPswd";
             this.TbPswd.PasswordChar = '*';
             this.TbPswd.Size = new System.Drawing.Size(100, 20);
             this.TbPswd.TabIndex = 5;
-            this.TbPswd.Click += new System.EventHandler(this.TbPswd_Click);
             this.TbPswd.TextChanged += new System.EventHandler(this.TbPswd_TextChanged);
             // 
             // label3
@@ -115,9 +116,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AppControlHoras.Properties.Resources.MostrarPsswd;
-            this.pictureBox2.Location = new System.Drawing.Point(314, 252);
+            this.pictureBox2.Location = new System.Drawing.Point(288, 255);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox2.Size = new System.Drawing.Size(16, 14);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -126,9 +127,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AppControlHoras.Properties.Resources.ocultarPswd;
-            this.pictureBox1.Location = new System.Drawing.Point(314, 252);
+            this.pictureBox1.Location = new System.Drawing.Point(288, 255);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 20);
+            this.pictureBox1.Size = new System.Drawing.Size(16, 14);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
@@ -154,6 +155,7 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(435, 446);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.BtInicioSesion);
             this.Controls.Add(this.TbPswd);
             this.Controls.Add(this.label3);
@@ -161,7 +163,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.PbCodice);
-            this.Controls.Add(this.pictureBox2);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
