@@ -11,7 +11,7 @@ namespace AppControlHoras
     {
         private readonly string CadenaConexion = @"Data Source=TERESA\SERVERSQL;Initial Catalog=ControlHoras;Integrated Security=True";
 
-        public static int Id;
+        // public static int Id;
         public static string Username = "";
 
 
