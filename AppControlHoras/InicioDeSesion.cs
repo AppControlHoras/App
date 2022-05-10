@@ -17,7 +17,7 @@ namespace AppControlHoras
         AutoCompleteStringCollection namesCollection = new AutoCompleteStringCollection();
         public InicioSesion()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         private void BtInicioSesion_Click(object sender, EventArgs e)
@@ -101,6 +101,20 @@ namespace AppControlHoras
             TbUser.AutoCompleteMode = AutoCompleteMode.Suggest;
             TbUser.AutoCompleteSource = AutoCompleteSource.CustomSource;
             TbUser.AutoCompleteCustomSource = namesCollection;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = false;
+            pictureBox2.Visible = true;
+            TbPswd.PasswordChar = '\0';
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Visible = true;
+            pictureBox2.Visible = false;
+            TbPswd.PasswordChar = '*';
         }
     }
 }
