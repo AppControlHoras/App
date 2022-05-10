@@ -88,7 +88,6 @@
             this.BtAdmin.TabIndex = 3;
             this.BtAdmin.Text = "Administración";
             this.BtAdmin.UseVisualStyleBackColor = false;
-            this.BtAdmin.Visible = false;
             this.BtAdmin.Click += new System.EventHandler(this.BtAdmin_Click);
             // 
             // BtImputacion
@@ -102,7 +101,6 @@
             this.BtImputacion.TabIndex = 4;
             this.BtImputacion.Text = "Imputación de Horas";
             this.BtImputacion.UseVisualStyleBackColor = false;
-            this.BtImputacion.Visible = false;
             this.BtImputacion.Click += new System.EventHandler(this.BtImputacion_Click);
             // 
             // BtExportar
@@ -116,7 +114,6 @@
             this.BtExportar.TabIndex = 5;
             this.BtExportar.Text = "Exportar Datos";
             this.BtExportar.UseVisualStyleBackColor = false;
-            this.BtExportar.Visible = false;
             this.BtExportar.Click += new System.EventHandler(this.BtExportar_Click);
             // 
             // BtAusencias
@@ -130,7 +127,6 @@
             this.BtAusencias.TabIndex = 6;
             this.BtAusencias.Text = "Control de Ausencias";
             this.BtAusencias.UseVisualStyleBackColor = false;
-            this.BtAusencias.Visible = false;
             this.BtAusencias.Click += new System.EventHandler(this.BtAusencias_Click);
             // 
             // lblUser

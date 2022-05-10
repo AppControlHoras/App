@@ -40,6 +40,9 @@ namespace AppControlHoras
         {
             MessageBox.Show("Administracion", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             this.Show();
+            MenuAdministracion menuAdministracion = new MenuAdministracion();
+            this.Hide();
+            menuAdministracion.Show();
         }
 
         private void BtImputacion_Click(object sender, EventArgs e)
