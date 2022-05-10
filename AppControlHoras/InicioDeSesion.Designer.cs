@@ -82,6 +82,8 @@
             this.TbPswd.PasswordChar = '*';
             this.TbPswd.Size = new System.Drawing.Size(100, 20);
             this.TbPswd.TabIndex = 5;
+            this.TbPswd.Click += new System.EventHandler(this.TbPswd_Click);
+            this.TbPswd.TextChanged += new System.EventHandler(this.TbPswd_TextChanged);
             // 
             // label3
             // 
