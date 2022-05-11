@@ -24,4 +24,4 @@ Tasas: x
 
 Proyectos: x
 
-Historial Imputaciones: En Progreso.
+Historial Imputaciones: Falta sincronizar el datagridview y la base de datos.
