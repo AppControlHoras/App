@@ -34,7 +34,7 @@ namespace AppControlHoras
         private void HistorialdeImputaciones_Load(object sender, EventArgs e)
         {
             dgvHistorial.DataSource = ShowData();
-        }
+         }
 
         public DataTable CargarTabla(String query)
         {
