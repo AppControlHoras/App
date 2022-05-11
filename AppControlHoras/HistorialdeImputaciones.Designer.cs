@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistorialdeImputaciones));
             this.dgvHistorial = new System.Windows.Forms.DataGridView();
             this.lblImputaciones = new System.Windows.Forms.Label();
@@ -35,12 +36,16 @@
             this.cbFiltro = new System.Windows.Forms.ComboBox();
             this.lblUser = new System.Windows.Forms.Label();
             this.pbCodice = new System.Windows.Forms.PictureBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.borrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCodice)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvHistorial
             // 
+            this.dgvHistorial.AllowUserToOrderColumns = true;
             this.dgvHistorial.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvHistorial.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHistorial.Location = new System.Drawing.Point(12, 146);
@@ -98,6 +103,19 @@
             this.pbCodice.TabIndex = 5;
             this.pbCodice.TabStop = false;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.borrarToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 48);
+            // 
+            // borrarToolStripMenuItem
+            // 
+            this.borrarToolStripMenuItem.Name = "borrarToolStripMenuItem";
+            this.borrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.borrarToolStripMenuItem.Text = "Borrar";
+            // 
             // HistorialdeImputaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -116,6 +134,7 @@
             this.Load += new System.EventHandler(this.HistorialdeImputaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistorial)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCodice)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,5 +148,7 @@
         private System.Windows.Forms.ComboBox cbFiltro;
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.PictureBox pbCodice;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem borrarToolStripMenuItem;
     }
 }

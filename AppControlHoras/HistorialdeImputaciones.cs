@@ -34,7 +34,7 @@ namespace AppControlHoras
         private void HistorialdeImputaciones_Load(object sender, EventArgs e)
         {
             dgvHistorial.DataSource = ShowData();
-        }
+         }
 
         public DataTable CargarTabla(String query)
         {
@@ -43,6 +43,11 @@ namespace AppControlHoras
             da.Fill(dt);
 
             return dt;
+        }
+
+        private void BorrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
