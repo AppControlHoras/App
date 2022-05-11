@@ -44,5 +44,10 @@ namespace AppControlHoras
 
             return dt;
         }
+
+        private void BorrarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
