@@ -36,9 +36,9 @@
             this.btVolver = new System.Windows.Forms.Button();
             this.tbElemento = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btEnviar = new System.Windows.Forms.Button();
             this.tbNuevo = new System.Windows.Forms.TextBox();
+            this.btEnviar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.PbCodice = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).BeginInit();
             this.panel1.SuspendLayout();
@@ -102,7 +102,7 @@
             this.btVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btVolver.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVolver.Location = new System.Drawing.Point(500, 458);
+            this.btVolver.Location = new System.Drawing.Point(500, 481);
             this.btVolver.Name = "btVolver";
             this.btVolver.Size = new System.Drawing.Size(75, 23);
             this.btVolver.TabIndex = 4;
@@ -130,14 +130,13 @@
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
             // 
-            // label1
+            // tbNuevo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 34);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nuevo nombre:";
+            this.tbNuevo.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.tbNuevo.Location = new System.Drawing.Point(89, 31);
+            this.tbNuevo.Name = "tbNuevo";
+            this.tbNuevo.Size = new System.Drawing.Size(100, 20);
+            this.tbNuevo.TabIndex = 2;
             // 
             // btEnviar
             // 
@@ -152,13 +151,14 @@
             this.btEnviar.UseVisualStyleBackColor = false;
             this.btEnviar.Click += new System.EventHandler(this.btEnviar_Click);
             // 
-            // tbNuevo
+            // label1
             // 
-            this.tbNuevo.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.tbNuevo.Location = new System.Drawing.Point(89, 31);
-            this.tbNuevo.Name = "tbNuevo";
-            this.tbNuevo.Size = new System.Drawing.Size(100, 20);
-            this.tbNuevo.TabIndex = 2;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 34);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nuevo nombre:";
             // 
             // PbCodice
             // 
