@@ -24,4 +24,4 @@ Tasas: x
 
 Proyectos: x
 
-Historial Imputaciones: Falta sincronizar el datagridview y la base de datos.
+Historial Imputaciones: Falta sincronizar el datagridview y la base de datos / Hacer que elimine en BBDD.
