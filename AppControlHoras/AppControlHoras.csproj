@@ -66,6 +66,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseDeDatos.cs" />
+    <Compile Include="Clientes\AnadirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\AnadirCliente.Designer.cs">
+      <DependentUpon>AnadirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes\EliminarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes\EliminarCliente.Designer.cs">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cuentas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Clientes\AnadirCliente.resx">
+      <DependentUpon>AnadirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\EliminarCliente.resx">
+      <DependentUpon>EliminarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cuentas.resx">
       <DependentUpon>Cuentas.cs</DependentUpon>
     </EmbeddedResource>

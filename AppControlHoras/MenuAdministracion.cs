@@ -23,5 +23,19 @@ namespace AppControlHoras
             accounts.Show();
             this.Hide();
         }
+
+        private void btVolver_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
+            this.Hide();
+        }
+
+        private void btClientes_Click(object sender, EventArgs e)
+        {
+            Cliente clientes = new Cliente();
+            clientes.Show();
+            this.Hide();
+        }
     }
 }
