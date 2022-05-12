@@ -4,7 +4,7 @@ Menu Administrador: En Progreso.
 
 AreaFuncional: x
 
-Clientes: x
+Clientes: Falta Modificar y cambiar salida de datos ComboBox 
 
 Cuentas: Hecho.
 
@@ -24,4 +24,4 @@ Tasas: x
 
 Proyectos: x
 
-Historial Imputaciones: Falta sincronizar el datagridview y la base de datos.
+Historial Imputaciones: Falta sincronizar el datagridview y la base de datos / Hacer que elimine en BBDD.
