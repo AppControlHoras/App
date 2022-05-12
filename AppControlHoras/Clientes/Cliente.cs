@@ -23,10 +23,7 @@ namespace AppControlHoras
 
         public DataTable showData()
         {
-            string query = "select cl.idCliente, cl.descripcion, cu.idCuenta, cu.descripcion " +
-                            "from Clientes cl " +
-                            "inner join Cuentas cu " +
-                            "on cl.idCliente=cu.idCuenta ";
+            string query = "select idCliente, descripcion from Clientes ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
@@ -57,6 +54,12 @@ namespace AppControlHoras
         {
             EliminarCliente eliminarCliente = new EliminarCliente();
             eliminarCliente.Show();
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+            ModificarCliente modificarCliente = new ModificarCliente();
+            modificarCliente.Show();
         }
     }
 }

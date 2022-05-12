@@ -9,35 +9,39 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.Clientes
+namespace AppControlHoras.Cuentas
 {
-    public partial class AnadirCliente : Form
+    public partial class AnadirCuenta : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = BATTISTA\\DAVIDSERVER; Initial Catalog = BBDD_HORAS; Integrated Security = True");
-        public AnadirCliente()
+
+        public AnadirCuenta()
         {
             InitializeComponent();
-
         }
 
         private void btAnadir_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string nombreCliente = tbCliente.Text;
-            string query = "insert into Clientes(descripcion) values('" + nombreCliente+"')";
-
-            if (string.IsNullOrEmpty(nombreCliente))
+            string descripcion = tbDescripcion.Text;
+            int idCliente = Convert.ToInt32(tbIdCliente.Text);
+            string query = "insert into Cuentas(idCliente, descripcion) values('" + idCliente + "','" + descripcion + "')";
+      
+            if (string.IsNullOrEmpty(descripcion))
             {
-                MessageBox.Show("Debes introducir el nombre del cliente");
+                MessageBox.Show("Debes rellenar la descripcion");
+            }
+            else if (string.IsNullOrEmpty(tbIdCliente.Text))
+            {
+                MessageBox.Show("Debes introducir el id del cliente");
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Añadido correctamente");
+                MessageBox.Show("Cuenta añadida correctamente");
             }
             connection.Close();
         }
     }
-
 }

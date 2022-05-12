@@ -28,7 +28,7 @@ namespace AppControlHoras.Clientes
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                cbClientes.Items.Add(reader["idCliente"].ToString());
+                cbClientes.Items.Add(reader["descripcion"].ToString());
             }
             connection.Close();
         }
@@ -39,7 +39,7 @@ namespace AppControlHoras.Clientes
         {
             connection.Open();
             string id = cbClientes.Text;
-            string query = "delete from Clientes where idCliente='" + id + "'";
+            string query = "delete from Clientes where descripcion='" + id + "'";
             try
             {
                 if (string.IsNullOrEmpty(id))

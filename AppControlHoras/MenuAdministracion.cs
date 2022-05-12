@@ -19,7 +19,7 @@ namespace AppControlHoras
 
         private void btCuentas_Click(object sender, EventArgs e)
         {
-            Cuentas accounts = new Cuentas();
+            Cuenta accounts = new Cuenta();
             accounts.Show();
             this.Hide();
         }
