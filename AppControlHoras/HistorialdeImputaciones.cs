@@ -48,6 +48,9 @@ namespace AppControlHoras
         private void BorrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+            dgvHistorial.CurrentRow.Cells.Remove(dgvHistorial.CurrentCell);
+
+            // SqlCommand cmd = new SqlCommand("DELETE FROM Imputaciones WHERE", connection);
         }
     }
 }
