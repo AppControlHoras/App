@@ -9,35 +9,38 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.Clientes
+namespace AppControlHoras.Cuentas
 {
-    public partial class AnadirCliente : Form
+
+    public partial class EliminarCuenta : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = BATTISTA\\DAVIDSERVER; Initial Catalog = BBDD_HORAS; Integrated Security = True");
-        public AnadirCliente()
+
+        public EliminarCuenta()
         {
             InitializeComponent();
-
         }
 
-        private void btAnadir_Click(object sender, EventArgs e)
+        private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string nombreCliente = tbCliente.Text;
-            string query = "insert into Clientes(descripcion) values('" + nombreCliente+"')";
-
-            if (string.IsNullOrEmpty(nombreCliente))
+            int idCuenta = Convert.ToInt32(tbIdCuenta.Text);
+            string query = "delete from Cuentas where idCuenta='" + idCuenta + "'";
+            string cuenta = "select descripcion from Cuenta where idCuenta='" + idCuenta + "'";
+            if (string.IsNullOrEmpty(tbIdCuenta.Text))
             {
-                MessageBox.Show("Debes introducir el nombre del cliente");
+                MessageBox.Show("Introduce el id de la cuenta");
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Añadido correctamente");
+
+                SqlCommand commandCuenta = new SqlCommand(cuenta, connection);
+                command.ExecuteNonQuery();
+                MessageBox.Show("Cuenta " + cuenta + " eliminada correctamente");
             }
             connection.Close();
         }
     }
-
 }

@@ -66,14 +66,14 @@
             this.dgvClient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClient.EnableHeadersVisualStyles = false;
             this.dgvClient.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.dgvClient.Location = new System.Drawing.Point(94, 70);
+            this.dgvClient.Location = new System.Drawing.Point(58, 92);
             this.dgvClient.Name = "dgvClient";
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.dgvClient.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvClient.Size = new System.Drawing.Size(611, 218);
+            this.dgvClient.Size = new System.Drawing.Size(506, 218);
             this.dgvClient.TabIndex = 0;
             // 
             // btAnadir
@@ -81,7 +81,7 @@
             this.btAnadir.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btAnadir.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btAnadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAnadir.Location = new System.Drawing.Point(94, 316);
+            this.btAnadir.Location = new System.Drawing.Point(58, 327);
             this.btAnadir.Name = "btAnadir";
             this.btAnadir.Size = new System.Drawing.Size(75, 23);
             this.btAnadir.TabIndex = 2;
@@ -94,7 +94,7 @@
             this.btEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEliminar.Location = new System.Drawing.Point(362, 316);
+            this.btEliminar.Location = new System.Drawing.Point(155, 327);
             this.btEliminar.Name = "btEliminar";
             this.btEliminar.Size = new System.Drawing.Size(75, 23);
             this.btEliminar.TabIndex = 3;
@@ -107,19 +107,20 @@
             this.btModificar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btModificar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btModificar.Location = new System.Drawing.Point(630, 316);
+            this.btModificar.Location = new System.Drawing.Point(253, 327);
             this.btModificar.Name = "btModificar";
             this.btModificar.Size = new System.Drawing.Size(75, 23);
             this.btModificar.TabIndex = 4;
             this.btModificar.Text = "Modificar";
             this.btModificar.UseVisualStyleBackColor = false;
+            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // btVolver
             // 
             this.btVolver.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btVolver.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVolver.Location = new System.Drawing.Point(630, 415);
+            this.btVolver.Location = new System.Drawing.Point(489, 327);
             this.btVolver.Name = "btVolver";
             this.btVolver.Size = new System.Drawing.Size(75, 23);
             this.btVolver.TabIndex = 5;
@@ -142,7 +143,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(617, 382);
             this.Controls.Add(this.PbCodice);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.btModificar);

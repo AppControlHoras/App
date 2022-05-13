@@ -4,7 +4,7 @@ Menu Administrador: En Progreso.
 
 AreaFuncional: x
 
-Clientes: Falta Modificar y cambiar salida de datos ComboBox 
+Clientes: Falta Modificar 
 
 Cuentas: Hecho.
 
