@@ -33,8 +33,7 @@ namespace AppControlHoras.Clientes
             connection.Close();
         }
 
-        // En este metodo ocurre lo mismo que en el de AnadirCliente, hay que encontrar la forma de que salga el nombre 
-        // y lo elimine y no un numero
+        
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();

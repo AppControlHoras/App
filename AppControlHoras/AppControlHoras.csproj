@@ -150,6 +150,9 @@
     <EmbeddedResource Include="Clientes\EliminarCliente.resx">
       <DependentUpon>EliminarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Clientes\ModificarCliente.resx">
+      <DependentUpon>ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\AnadirCuenta.resx">
       <DependentUpon>AnadirCuenta.cs</DependentUpon>
     </EmbeddedResource>
