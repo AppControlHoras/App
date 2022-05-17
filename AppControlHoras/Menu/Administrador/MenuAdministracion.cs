@@ -37,5 +37,12 @@ namespace AppControlHoras
             clientes.Show();
             this.Hide();
         }
+
+        private void btAreaFuncional_Click(object sender, EventArgs e)
+        {
+            AreasFuncionales.Area areaFuncional = new AreasFuncionales.Area();
+            areaFuncional.Show();
+            this.Hide();
+        }
     }
 }

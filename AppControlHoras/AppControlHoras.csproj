@@ -65,6 +65,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreasFuncionales\Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreasFuncionales\Area.Designer.cs">
+      <DependentUpon>Area.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreasFuncionales\AñadirArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreasFuncionales\AñadirArea.Designer.cs">
+      <DependentUpon>AñadirArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreasFuncionales\EliminarArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreasFuncionales\EliminarArea.Designer.cs">
+      <DependentUpon>EliminarArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AreasFuncionales\ModificarArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AreasFuncionales\ModificarArea.Designer.cs">
+      <DependentUpon>ModificarArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseDeDatos.cs" />
     <Compile Include="Clientes\AnadirCliente.cs">
       <SubType>Form</SubType>
@@ -141,6 +165,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AreasFuncionales\Area.resx">
+      <DependentUpon>Area.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreasFuncionales\AñadirArea.resx">
+      <DependentUpon>AñadirArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreasFuncionales\EliminarArea.resx">
+      <DependentUpon>EliminarArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AreasFuncionales\ModificarArea.resx">
+      <DependentUpon>ModificarArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Clientes\AnadirCliente.resx">
       <DependentUpon>AnadirCliente.cs</DependentUpon>
     </EmbeddedResource>
