@@ -162,7 +162,6 @@
     <Compile Include="Empleados\ModificarEmpleado.Designer.cs">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="HistorialdeImputaciones.cs">
     <Compile Include="HistorialImputaciones\HistorialdeImputaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,7 +261,6 @@
     <EmbeddedResource Include="Empleados\ModificarEmpleado.resx">
       <DependentUpon>ModificarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HistorialdeImputaciones.resx">
     <EmbeddedResource Include="HistorialImputaciones\HistorialdeImputaciones.resx">
       <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </EmbeddedResource>
