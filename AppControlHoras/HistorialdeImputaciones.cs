@@ -62,7 +62,7 @@ namespace AppControlHoras
                 }
                 else if (column.HeaderText.Equals("HORAS"))
                 {
-                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 0));
+                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 1));
                     connection.Open();
 
                     SqlCommand cmd = new SqlCommand("DELETE FROM Imputaciones WHERE HORAS = @valor", connection);
@@ -71,21 +71,10 @@ namespace AppControlHoras
                     cmd.ExecuteNonQuery();
                     connection.Close();
                 }
-                else if (column.HeaderText.Equals("ID_EMPLEADO"))
-                {
-
-                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 0));
-                    connection.Open();
-
-                    SqlCommand cmd = new SqlCommand("DELETE FROM Imputaciones WHERE ID_EMPLEADO = @valor", connection);
-                    cmd.Parameters.AddWithValue("@valor", valor);
-
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
-                }
                 else if (column.HeaderText.Equals("ID_TAREA"))
                 {
-                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 0));
+
+                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 2));
                     connection.Open();
 
                     SqlCommand cmd = new SqlCommand("DELETE FROM Imputaciones WHERE ID_TAREA = @valor", connection);
@@ -94,7 +83,19 @@ namespace AppControlHoras
                     cmd.ExecuteNonQuery();
                     connection.Close();
                 }
+                else if (column.HeaderText.Equals("ID_EMPLEADO"))
+                {
+                    int valor = Convert.ToInt32(GetValorCelda(dgvHistorial, 3));
+                    connection.Open();
+
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Imputaciones WHERE ID_EMPLEADO = @valor", connection);
+                    cmd.Parameters.AddWithValue("@valor", valor);
+
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
             }
+            Cargar();
         }
         public static string GetValorCelda(DataGridView dgv, int num)
         {
