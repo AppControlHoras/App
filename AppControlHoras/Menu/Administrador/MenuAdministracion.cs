@@ -38,6 +38,27 @@ namespace AppControlHoras
             this.Hide();
         }
 
+        private void btEmpleados_Click(object sender, EventArgs e)
+        {
+            Empleados.Empleado empleado = new Empleados.Empleado();
+            empleado.Show();
+            this.Hide();
+        }
+
+        private void btTasas_Click(object sender, EventArgs e)
+        {
+            Tasas.Tasa tasa = new Tasas.Tasa();
+            tasa.Show();
+            this.Hide();
+        }
+
+        private void btAreas_Click(object sender, EventArgs e)
+        {
+            AreasFuncionales.AreaFuncional areaFuncional = new AreasFuncionales.AreaFuncional();
+            areaFuncional.Show();
+            this.Hide();
+        }
+
         private void btAreaFuncional_Click(object sender, EventArgs e)
         {
             AreasFuncionales.Area areaFuncional = new AreasFuncionales.Area();

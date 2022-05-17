@@ -138,6 +138,31 @@
     <Compile Include="Cuentas\ModificarCuenta.Designer.cs">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Empleados\AnadirEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\AnadirEmpleado.Designer.cs">
+      <DependentUpon>AnadirEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\EliminarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\EliminarEmpleado.Designer.cs">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\Empleado.Designer.cs">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados\ModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empleados\ModificarEmpleado.Designer.cs">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialdeImputaciones.cs">
     <Compile Include="HistorialImputaciones\HistorialdeImputaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +190,30 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tasas\AnadirTasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasas\AnadirTasa.Designer.cs">
+      <DependentUpon>AnadirTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasas\EliminarTasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasas\EliminarTasa.Designer.cs">
+      <DependentUpon>EliminarTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasas\ModificarTasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasas\ModificarTasa.Designer.cs">
+      <DependentUpon>ModificarTasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasas\Tasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tasas\Tasa.Designer.cs">
+      <DependentUpon>Tasa.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AreasFuncionales\Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
@@ -201,6 +250,19 @@
     <EmbeddedResource Include="Cuentas\ModificarCuenta.resx">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\AnadirEmpleado.resx">
+      <DependentUpon>AnadirEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\EliminarEmpleado.resx">
+      <DependentUpon>EliminarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\Empleado.resx">
+      <DependentUpon>Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empleados\ModificarEmpleado.resx">
+      <DependentUpon>ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistorialdeImputaciones.resx">
     <EmbeddedResource Include="HistorialImputaciones\HistorialdeImputaciones.resx">
       <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </EmbeddedResource>
@@ -223,6 +285,18 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Tasas\AnadirTasa.resx">
+      <DependentUpon>AnadirTasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasas\EliminarTasa.resx">
+      <DependentUpon>EliminarTasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasas\ModificarTasa.resx">
+      <DependentUpon>ModificarTasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tasas\Tasa.resx">
+      <DependentUpon>Tasa.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
