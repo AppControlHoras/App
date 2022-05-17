@@ -2,7 +2,7 @@ Inicio de Sesion: Hecho.
 
 Menu Administrador: En Progreso.
 
-AreaFuncional: x
+AreaFuncional: En Progreso.
 
 Clientes: Falta Modificar 
 
