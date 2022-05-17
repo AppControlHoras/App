@@ -114,29 +114,29 @@
     <Compile Include="Cuentas\ModificarCuenta.Designer.cs">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="HistorialdeImputaciones.cs">
+    <Compile Include="HistorialImputaciones\HistorialdeImputaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HistorialdeImputaciones.Designer.cs">
+    <Compile Include="HistorialImputaciones\HistorialdeImputaciones.Designer.cs">
       <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="InicioDeSesion.cs">
+    <Compile Include="InicioSesion\InicioDeSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InicioDeSesion.Designer.cs">
+    <Compile Include="InicioSesion\InicioDeSesion.Designer.cs">
       <DependentUpon>InicioDeSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuAdministracion.cs">
+    <Compile Include="Menu\Administrador\MenuAdministracion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuAdministracion.Designer.cs">
+    <Compile Include="Menu\Administrador\MenuAdministracion.Designer.cs">
       <DependentUpon>MenuAdministracion.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Menu\Principal\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Menu\Principal\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -165,16 +165,16 @@
     <EmbeddedResource Include="Cuentas\ModificarCuenta.resx">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HistorialdeImputaciones.resx">
+    <EmbeddedResource Include="HistorialImputaciones\HistorialdeImputaciones.resx">
       <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InicioDeSesion.resx">
+    <EmbeddedResource Include="InicioSesion\InicioDeSesion.resx">
       <DependentUpon>InicioDeSesion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuAdministracion.resx">
+    <EmbeddedResource Include="Menu\Administrador\MenuAdministracion.resx">
       <DependentUpon>MenuAdministracion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Menu\Principal\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -228,5 +228,6 @@
   <ItemGroup>
     <None Include="Resources\MostrarPsswd.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
