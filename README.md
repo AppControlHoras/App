@@ -4,11 +4,11 @@ Menu Administrador: En Progreso.
 
 AreaFuncional: x
 
-Clientes: Falta Modificar 
+Clientes: Hecho 
 
 Cuentas: Hecho.
 
-Empleados: x
+Empleados: Hechas pantallas
 
 EmpleadosArea: x
 
@@ -20,7 +20,7 @@ Tareas: x
 
 TareasTipo: x
 
-Tasas: x
+Tasas: Hechas Pantallas
 
 Proyectos: x
 
