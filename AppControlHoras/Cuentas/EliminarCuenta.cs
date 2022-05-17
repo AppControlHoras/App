@@ -26,7 +26,6 @@ namespace AppControlHoras.Cuentas
             connection.Open();
             int idCuenta = Convert.ToInt32(tbIdCuenta.Text);
             string query = "delete from Cuentas where idCuenta='" + idCuenta + "'";
-            string cuenta = "select descripcion from Cuenta where idCuenta='" + idCuenta + "'";
             if (string.IsNullOrEmpty(tbIdCuenta.Text))
             {
                 MessageBox.Show("Introduce el id de la cuenta");
@@ -36,9 +35,7 @@ namespace AppControlHoras.Cuentas
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
 
-                SqlCommand commandCuenta = new SqlCommand(cuenta, connection);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Cuenta " + cuenta + " eliminada correctamente");
+                MessageBox.Show("Cuenta eliminada correctamente");
             }
             connection.Close();
         }

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuAdministracion));
             this.btCuentas = new System.Windows.Forms.Button();
-            this.PbCodice = new System.Windows.Forms.PictureBox();
             this.btVolver = new System.Windows.Forms.Button();
             this.btClientes = new System.Windows.Forms.Button();
+            this.PbCodice = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,16 +48,6 @@
             this.btCuentas.Text = "Cuentas";
             this.btCuentas.UseVisualStyleBackColor = false;
             this.btCuentas.Click += new System.EventHandler(this.btCuentas_Click);
-            // 
-            // PbCodice
-            // 
-            this.PbCodice.Image = global::AppControlHoras.Properties.Resources.CodiceTitulo;
-            this.PbCodice.Location = new System.Drawing.Point(12, 12);
-            this.PbCodice.Name = "PbCodice";
-            this.PbCodice.Size = new System.Drawing.Size(131, 46);
-            this.PbCodice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PbCodice.TabIndex = 9;
-            this.PbCodice.TabStop = false;
             // 
             // btVolver
             // 
@@ -77,13 +67,23 @@
             this.btClientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btClientes.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btClientes.Location = new System.Drawing.Point(200, 112);
+            this.btClientes.Location = new System.Drawing.Point(196, 112);
             this.btClientes.Name = "btClientes";
             this.btClientes.Size = new System.Drawing.Size(75, 23);
             this.btClientes.TabIndex = 11;
             this.btClientes.Text = "Clientes";
             this.btClientes.UseVisualStyleBackColor = false;
             this.btClientes.Click += new System.EventHandler(this.btClientes_Click);
+            // 
+            // PbCodice
+            // 
+            this.PbCodice.Image = global::AppControlHoras.Properties.Resources.CodiceTitulo;
+            this.PbCodice.Location = new System.Drawing.Point(12, 12);
+            this.PbCodice.Name = "PbCodice";
+            this.PbCodice.Size = new System.Drawing.Size(131, 46);
+            this.PbCodice.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PbCodice.TabIndex = 9;
+            this.PbCodice.TabStop = false;
             // 
             // MenuAdministracion
             // 
