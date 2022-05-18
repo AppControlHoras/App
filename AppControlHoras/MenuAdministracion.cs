@@ -51,12 +51,5 @@ namespace AppControlHoras
             tasa.Show();
             this.Hide();
         }
-
-        private void btAreas_Click(object sender, EventArgs e)
-        {
-            AreasFuncionales.AreaFuncional areaFuncional = new AreasFuncionales.AreaFuncional();
-            areaFuncional.Show();
-            this.Hide();
-        }
     }
 }
