@@ -2,13 +2,14 @@ Inicio de Sesion: Hecho.
 
 Menu Administrador: En Progreso.
 
-AreaFuncional: x
+AreaFuncional: Hecho.
+AreaFuncional: Hecho
 
-Clientes: Falta Modificar 
+Clientes: Hecho 
 
 Cuentas: Hecho.
 
-Empleados: x
+Empleados: Hechas pantallas
 
 EmpleadosArea: x
 
@@ -20,8 +21,8 @@ Tareas: x
 
 TareasTipo: x
 
-Tasas: x
+Tasas: Hechas Pantallas
 
 Proyectos: x
 
-Historial Imputaciones: Falta sincronizar el datagridview y la base de datos / Hacer que elimine en BBDD.
+Historial Imputaciones: Hecho.

@@ -14,7 +14,7 @@ namespace AppControlHoras
 {
     public partial class Cliente : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = BATTISTA\\DAVIDSERVER; Initial Catalog = BBDD_HORAS; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
 
         public Cliente()
         {
@@ -23,7 +23,7 @@ namespace AppControlHoras
 
         public DataTable showData()
         {
-            string query = "select idCliente, descripcion from Clientes ";
+            string query = "select ID_CLIENTE, DESCRIPCION from Clientes ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
