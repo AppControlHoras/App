@@ -138,6 +138,12 @@
     <Compile Include="Cuentas\ModificarCuenta.Designer.cs">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
     </Compile>
+    <Compile Include="EjemploFiltradoComboBox\FiltradoComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EjemploFiltradoComboBox\FiltradoComboBox.Designer.cs">
+      <DependentUpon>FiltradoComboBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados\AnadirEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cuentas\ModificarCuenta.resx">
       <DependentUpon>ModificarCuenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EjemploFiltradoComboBox\FiltradoComboBox.resx">
+      <DependentUpon>FiltradoComboBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empleados\AnadirEmpleado.resx">
       <DependentUpon>AnadirEmpleado.cs</DependentUpon>

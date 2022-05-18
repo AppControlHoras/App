@@ -52,13 +52,6 @@ namespace AppControlHoras
             this.Hide();
         }
 
-        private void btAreas_Click(object sender, EventArgs e)
-        {
-            AreasFuncionales.AreaFuncional areaFuncional = new AreasFuncionales.AreaFuncional();
-            areaFuncional.Show();
-            this.Hide();
-        }
-
         private void btAreaFuncional_Click(object sender, EventArgs e)
         {
             AreasFuncionales.Area areaFuncional = new AreasFuncionales.Area();
