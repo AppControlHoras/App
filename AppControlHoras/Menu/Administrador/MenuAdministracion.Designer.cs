@@ -125,7 +125,6 @@
             this.btAreaFuncional.TabIndex = 12;
             this.btAreaFuncional.Text = "Area";
             this.btAreaFuncional.UseVisualStyleBackColor = false;
-            this.btAreaFuncional.Click += new System.EventHandler(this.btAreaFuncional_Click);
             // 
             // MenuAdministracion
             // 
