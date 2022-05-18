@@ -3,7 +3,6 @@ Inicio de Sesion: Hecho.
 Menu Administrador: En Progreso.
 
 AreaFuncional: Hecho.
-AreaFuncional: Hecho
 
 Clientes: Hecho 
 
@@ -21,7 +20,7 @@ Tareas: x
 
 TareasTipo: x
 
-Tasas: Hechas Pantallas
+Tasas: Hecho, fallo en eliminar y modificar 
 
 Proyectos: En Progreso.
 
