@@ -23,6 +23,6 @@ TareasTipo: x
 
 Tasas: Hechas Pantallas
 
-Proyectos: x
+Proyectos: En Progreso.
 
 Historial Imputaciones: Hecho.
