@@ -37,11 +37,11 @@ namespace AppControlHoras.Clientes
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string id = cbClientes.Text;
-            string query = "delete from Clientes where descripcion='" + id + "'";
+            string descripcion = cbClientes.Text;
+            string query = "delete from Clientes where descripcion='" + descripcion + "'";
             try
             {
-                if (string.IsNullOrEmpty(id))
+                if (string.IsNullOrEmpty(descripcion))
                 {
                     MessageBox.Show("Selecciona un id");
                 }
