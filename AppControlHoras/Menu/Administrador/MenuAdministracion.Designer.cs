@@ -36,6 +36,7 @@
             this.btTasas = new System.Windows.Forms.Button();
             this.PbCodice = new System.Windows.Forms.PictureBox();
             this.btAreaFuncional = new System.Windows.Forms.Button();
+            this.btProyectos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,12 +128,26 @@
             this.btAreaFuncional.UseVisualStyleBackColor = false;
             this.btAreaFuncional.Click += new System.EventHandler(this.btAreaFuncional_Click);
             // 
+            // btProyectos
+            // 
+            this.btProyectos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btProyectos.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btProyectos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btProyectos.Location = new System.Drawing.Point(196, 162);
+            this.btProyectos.Name = "btProyectos";
+            this.btProyectos.Size = new System.Drawing.Size(75, 23);
+            this.btProyectos.TabIndex = 15;
+            this.btProyectos.Text = "Proyectos";
+            this.btProyectos.UseVisualStyleBackColor = false;
+            this.btProyectos.Click += new System.EventHandler(this.btProyectos_Click);
+            // 
             // MenuAdministracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btProyectos);
             this.Controls.Add(this.btTasas);
             this.Controls.Add(this.btEmpleados);
             this.Controls.Add(this.btAreaFuncional);
@@ -158,5 +173,6 @@
         private System.Windows.Forms.Button btEmpleados;
         private System.Windows.Forms.Button btTasas;
         private System.Windows.Forms.Button btAreaFuncional;
+        private System.Windows.Forms.Button btProyectos;
     }
 }

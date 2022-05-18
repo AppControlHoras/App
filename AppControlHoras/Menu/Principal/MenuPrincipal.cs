@@ -17,17 +17,17 @@ namespace AppControlHoras
             InitializeComponent();
             lblUser.Text = BaseDeDatos.Username;
 
-            if (BaseDeDatos.Username.Equals("alvaro.benito")){
-                BtAdmin.Visible = true;
-                BtAusencias.Visible = true;
-                BtExportar.Visible = true;
-                BtImputacion.Visible = true;
-            }
-            else
-            {
-                BtExportar.Visible = true;
-                BtImputacion.Visible = true;
-            }
+            //if (BaseDeDatos.Username.Equals("alvaro.benito")){
+             //   BtAdmin.Visible = true;
+             //   BtAusencias.Visible = true;
+             //   BtExportar.Visible = true;
+             //   BtImputacion.Visible = true;
+           // }
+           // else
+           // {
+            //    BtExportar.Visible = true;
+             //   BtImputacion.Visible = true;
+           // }
         }
 
         private void BtCerrarSesion_Click(object sender, EventArgs e)

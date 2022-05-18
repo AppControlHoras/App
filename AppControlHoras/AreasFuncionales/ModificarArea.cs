@@ -55,7 +55,7 @@ namespace AppControlHoras.AreaFuncional
             string nuevoNombre = tbNuevoNombre.Text;
             string idArea = lbIdArea.Text;
             string query = "UPDATE AreaFuncional " +
-                            "SET DESCIPCION ='" + nuevoNombre + "' " +
+                            "SET DESCRIPCION ='" + nuevoNombre + "' " +
                             "WHERE ID_AREA='" + idArea + "'";
 
             if (string.IsNullOrEmpty(nuevoNombre))

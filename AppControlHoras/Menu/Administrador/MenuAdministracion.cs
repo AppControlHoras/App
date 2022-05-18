@@ -58,5 +58,12 @@ namespace AppControlHoras
             areaFuncional.Show();
             this.Hide();
         }
+
+        private void btProyectos_Click(object sender, EventArgs e)
+        {
+            Proyectos.Proyectos proyecto = new Proyectos.Proyectos();
+            proyecto.Show();
+            this.Hide();
+        }
     }
 }

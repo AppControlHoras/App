@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.AreaFuncional
+namespace AppControlHoras.Proyectos
 {
-    public partial class AñadirArea : Form
+    public partial class AnadirProyecto : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
-        public AñadirArea()
+        public AnadirProyecto()
         {
             InitializeComponent();
         }
@@ -22,17 +22,18 @@ namespace AppControlHoras.AreaFuncional
         private void btAnadir_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string nombreArea = tbArea.Text;
+            string proyecto = textBox1.Text;
 
-            if (string.IsNullOrEmpty(nombreArea))
+            if (string.IsNullOrEmpty(proyecto))
             {
-                MessageBox.Show("Debes introducir el nombre del area","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debes introducir el nombre del proyecto","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                SqlCommand command = new SqlCommand("INSERT INTO AreaFuncional(DESCRIPCION) values('" + nombreArea + "')", connection);
-                command.ExecuteNonQuery();
+                SqlCommand cmd = new SqlCommand("INSERT INTO Proyectos(DESCRIPCION) VALUES('" + proyecto + "')", connection);
+                cmd.ExecuteNonQuery();
                 MessageBox.Show("Añadido correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             connection.Close();
         }
