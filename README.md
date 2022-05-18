@@ -2,7 +2,7 @@ Inicio de Sesion: Hecho.
 
 Menu Administrador: En Progreso.
 
-AreaFuncional: Hecho.
+AreaFuncional: Hecho. Error al mostrar tabla en DataGridView.
 
 Clientes: Hecho 
 
@@ -22,6 +22,6 @@ TareasTipo: x
 
 Tasas: Hecho, fallo en eliminar y modificar 
 
-Proyectos: En Progreso.
+Proyectos: Hecho. Error al mostrar tabla en DataGridView.
 
 Historial Imputaciones: Hecho.
