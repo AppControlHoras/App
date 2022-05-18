@@ -13,7 +13,7 @@ namespace AppControlHoras.Proyectos
 {
     public partial class Proyectos : Form
     {
-        private SqlConnection connection = new SqlConnection(@"Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
         public Proyectos()
         {
             InitializeComponent();
