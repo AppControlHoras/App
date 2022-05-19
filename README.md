@@ -14,8 +14,6 @@ EmpleadosArea: x
 
 Imputaciones: x
 
-Proyectos: x
-
 Tareas: x
 
 TareasTipo: x
