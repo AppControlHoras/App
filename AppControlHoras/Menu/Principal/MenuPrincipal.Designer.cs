@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.PbCodice = new System.Windows.Forms.PictureBox();
-            this.GbMenu = new System.Windows.Forms.GroupBox();
             this.BtCerrarSesion = new System.Windows.Forms.Button();
             this.BtAdmin = new System.Windows.Forms.Button();
             this.BtImputacion = new System.Windows.Forms.Button();
             this.BtExportar = new System.Windows.Forms.Button();
             this.BtAusencias = new System.Windows.Forms.Button();
             this.lblUser = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
-            this.GbMenu.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PbCodice
@@ -51,25 +51,12 @@
             this.PbCodice.TabIndex = 1;
             this.PbCodice.TabStop = false;
             // 
-            // GbMenu
-            // 
-            this.GbMenu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.GbMenu.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.GbMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.GbMenu.Controls.Add(this.BtCerrarSesion);
-            this.GbMenu.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.GbMenu.Location = new System.Drawing.Point(12, 293);
-            this.GbMenu.Name = "GbMenu";
-            this.GbMenu.Size = new System.Drawing.Size(411, 70);
-            this.GbMenu.TabIndex = 2;
-            this.GbMenu.TabStop = false;
-            // 
             // BtCerrarSesion
             // 
-            this.BtCerrarSesion.BackColor = System.Drawing.Color.White;
-            this.BtCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BtCerrarSesion.Location = new System.Drawing.Point(158, 19);
+            this.BtCerrarSesion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.BtCerrarSesion.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.BtCerrarSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtCerrarSesion.Location = new System.Drawing.Point(158, 12);
             this.BtCerrarSesion.Name = "BtCerrarSesion";
             this.BtCerrarSesion.Size = new System.Drawing.Size(81, 33);
             this.BtCerrarSesion.TabIndex = 7;
@@ -140,6 +127,16 @@
             this.lblUser.TabIndex = 7;
             this.lblUser.Text = "Usuario";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.BtCerrarSesion);
+            this.panel1.Location = new System.Drawing.Point(12, 298);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(411, 57);
+            this.panel1.TabIndex = 8;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -147,20 +144,21 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(435, 446);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblUser);
             this.Controls.Add(this.BtAusencias);
             this.Controls.Add(this.BtExportar);
             this.Controls.Add(this.BtImputacion);
             this.Controls.Add(this.BtAdmin);
-            this.Controls.Add(this.GbMenu);
             this.Controls.Add(this.PbCodice);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "MenuPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Principal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).EndInit();
-            this.GbMenu.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,12 +167,12 @@
         #endregion
 
         private System.Windows.Forms.PictureBox PbCodice;
-        private System.Windows.Forms.GroupBox GbMenu;
         private System.Windows.Forms.Button BtCerrarSesion;
         private System.Windows.Forms.Button BtAdmin;
         private System.Windows.Forms.Button BtImputacion;
         private System.Windows.Forms.Button BtExportar;
         private System.Windows.Forms.Button BtAusencias;
         private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Panel panel1;
     }
 }

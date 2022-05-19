@@ -243,6 +243,18 @@
     <Compile Include="Tasas\Tasa.Designer.cs">
       <DependentUpon>Tasa.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoProyectos\AnadirTipoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoProyectos\AnadirTipoProyecto.Designer.cs">
+      <DependentUpon>AnadirTipoProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoProyectos\TipoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoProyectos\TipoProyecto.Designer.cs">
+      <DependentUpon>TipoProyecto.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AreasFuncionales\Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
     </EmbeddedResource>
@@ -339,6 +351,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tasas\Tasa.resx">
       <DependentUpon>Tasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoProyectos\AnadirTipoProyecto.resx">
+      <DependentUpon>AnadirTipoProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoProyectos\TipoProyecto.resx">
+      <DependentUpon>TipoProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

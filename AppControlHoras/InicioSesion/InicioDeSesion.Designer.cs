@@ -30,7 +30,7 @@ namespace AppControlHoras
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FiltradoComboBox));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InicioSesion));
             this.lblTitulo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TbUser = new System.Windows.Forms.TextBox();
@@ -47,7 +47,7 @@ namespace AppControlHoras
             // 
             // lblTitulo
             // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(12, 116);
@@ -101,13 +101,13 @@ namespace AppControlHoras
             // BtInicioSesion
             // 
             this.BtInicioSesion.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.BtInicioSesion.BackColor = System.Drawing.SystemColors.Control;
+            this.BtInicioSesion.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BtInicioSesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.BtInicioSesion.FlatAppearance.BorderColor = System.Drawing.SystemColors.Highlight;
+            this.BtInicioSesion.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.BtInicioSesion.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.BtInicioSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtInicioSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtInicioSesion.Location = new System.Drawing.Point(172, 278);
+            this.BtInicioSesion.Location = new System.Drawing.Point(178, 296);
             this.BtInicioSesion.Name = "BtInicioSesion";
             this.BtInicioSesion.Size = new System.Drawing.Size(81, 23);
             this.BtInicioSesion.TabIndex = 6;
@@ -139,7 +139,7 @@ namespace AppControlHoras
             // 
             // PbCodice
             // 
-            this.PbCodice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.PbCodice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PbCodice.Image = global::AppControlHoras.Properties.Resources.CodiceTitulo;
             this.PbCodice.Location = new System.Drawing.Point(12, 36);

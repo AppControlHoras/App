@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.Proyectos
+namespace AppControlHoras.TipoProyectos
 {
-    public partial class AnadirProyecto : Form
+    public partial class AnadirTipoProyecto : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
-        public AnadirProyecto()
+        public AnadirTipoProyecto()
         {
             InitializeComponent();
         }
@@ -22,30 +22,20 @@ namespace AppControlHoras.Proyectos
         private void btAnadir_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string proyecto = textBox1.Text;
+            string tipo = tbTipoProyecto.Text;
 
-            if (string.IsNullOrEmpty(proyecto))
+            if (string.IsNullOrEmpty(tipo))
             {
-                MessageBox.Show("Debes introducir el nombre del proyecto","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debes introducir el tipo de proyecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO Proyectos(DESCRIPCION) VALUES('" + proyecto + "')", connection);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Tipo_Proyecto(DESCRIPCION) VALUES('"+ tipo + "')", connection );
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Añadido correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                
+                this.Close();
             }
             connection.Close();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblProyecto_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

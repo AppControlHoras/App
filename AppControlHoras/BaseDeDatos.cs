@@ -30,7 +30,7 @@ namespace AppControlHoras
             SqlDataReader reader = command.ExecuteReader();
             while (reader.Read())
             {
-                Username = reader.GetString(1);
+                Username = reader.GetString(0);
             }
 
             reader.Close();

@@ -32,7 +32,6 @@ namespace AppControlHoras
 
         private void BtCerrarSesion_Click(object sender, EventArgs e)
         {
-            
             this.Close();
         }
 
@@ -59,6 +58,11 @@ namespace AppControlHoras
         {
             MessageBox.Show("Ausencias", "", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             this.Show();
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

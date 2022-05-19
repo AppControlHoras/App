@@ -44,9 +44,6 @@ namespace AppControlHoras
                         TbPswd.Clear();
 
                         principal.FormClosing += new FormClosingEventHandler(Form_FormClosing);
-                        
-
-                        
                     }
                     else
                     {
