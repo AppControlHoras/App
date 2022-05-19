@@ -22,4 +22,6 @@ Tasas: Hecho, fallo en eliminar y modificar
 
 Proyectos: Hecho.
 
+ProyectosTipo: x
+
 Historial Imputaciones: Hecho.
