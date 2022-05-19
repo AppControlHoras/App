@@ -28,20 +28,85 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dtpFechaBaja = new System.Windows.Forms.DateTimePicker();
+            this.cbIdEmpleado = new System.Windows.Forms.ComboBox();
+            this.btEliminar = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(67, 93);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "ID Empleado:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(67, 189);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Fecha Baja:";
+            // 
+            // dtpFechaBaja
+            // 
+            this.dtpFechaBaja.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaBaja.Location = new System.Drawing.Point(144, 183);
+            this.dtpFechaBaja.Name = "dtpFechaBaja";
+            this.dtpFechaBaja.Size = new System.Drawing.Size(100, 20);
+            this.dtpFechaBaja.TabIndex = 3;
+            // 
+            // cbIdEmpleado
+            // 
+            this.cbIdEmpleado.FormattingEnabled = true;
+            this.cbIdEmpleado.Location = new System.Drawing.Point(144, 90);
+            this.cbIdEmpleado.Name = "cbIdEmpleado";
+            this.cbIdEmpleado.Size = new System.Drawing.Size(121, 21);
+            this.cbIdEmpleado.TabIndex = 4;
+            // 
+            // btEliminar
+            // 
+            this.btEliminar.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEliminar.Location = new System.Drawing.Point(144, 281);
+            this.btEliminar.Name = "btEliminar";
+            this.btEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btEliminar.TabIndex = 14;
+            this.btEliminar.Text = "Eliminar";
+            this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // EliminarEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btEliminar);
+            this.Controls.Add(this.cbIdEmpleado);
+            this.Controls.Add(this.dtpFechaBaja);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Name = "EliminarEmpleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EliminarEmpleado";
+            this.Load += new System.EventHandler(this.EliminarEmpleado_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DateTimePicker dtpFechaBaja;
+        private System.Windows.Forms.ComboBox cbIdEmpleado;
+        private System.Windows.Forms.Button btEliminar;
     }
 }

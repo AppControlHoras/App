@@ -22,8 +22,12 @@ namespace AppControlHoras.Empleados
 
         private DataTable showInfo()
         {
-            string query = "select idEmpleado, nombre, apellidos, email, fechaAlta, idArea, idTasa " +
-                            "from Empleados ";
+            // Muestra solo los empleados que el campo fechaBaja es null, lo que quiere decir que son actuales
+            string query = "select em.idEmpleado, em.nombre, em.primerApellido, em.segundoApellido, em.email, em.fechaAlta, ta.valor as valorTasa, ar.descripcion as departamento " +
+                            "from Empleados em " +
+                            "join Tasa ta on em.idTasa=ta.idTasa " +
+                            "join AreasFuncionales ar on em.idArea=ar.idArea " +
+                            "where em.fechaBaja is null";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
             adapter.Fill(dataTable);
