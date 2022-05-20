@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,7 @@ namespace AppControlHoras.TipoProyectos
 {
     public partial class TipoProyecto : Form
     {
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
         public TipoProyecto()
         {
             InitializeComponent();
@@ -21,9 +23,8 @@ namespace AppControlHoras.TipoProyectos
         {
             TipoProyectos.AnadirTipoProyecto proyecto = new TipoProyectos.AnadirTipoProyecto();
             proyecto.Show();
-            this.Hide();
 
-            proyecto.FormClosing += new FormClosingEventHandler(Form_FormClosing);
+
         }
 
         private void Form_FormClosing(object sender, FormClosingEventArgs e)
@@ -35,18 +36,12 @@ namespace AppControlHoras.TipoProyectos
         {
             TipoProyectos.AnadirTipoProyecto proyecto = new TipoProyectos.AnadirTipoProyecto();
             proyecto.Show();
-            this.Hide();
-
-            proyecto.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
         private void btModificar_Click(object sender, EventArgs e)
         {
             TipoProyectos.AnadirTipoProyecto proyecto = new TipoProyectos.AnadirTipoProyecto();
             proyecto.Show();
-            this.Hide();
-
-            proyecto.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
         private void btVolver_Click(object sender, EventArgs e)
@@ -54,9 +49,18 @@ namespace AppControlHoras.TipoProyectos
             this.Close();
         }
 
+        private DataTable showInfo()
+        {
+            string query = "SELECT ID_TIPO_PROYECTO, DESCRIPCION FROM Tipo_Proyecto";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+            DataTable data = new DataTable();
+            adapter.Fill(data);
+            return data;
+
+        }
         private void TipoProyecto_Load(object sender, EventArgs e)
         {
-
+            dgvTipoProyectos.DataSource = showInfo();
         }
     }
 }

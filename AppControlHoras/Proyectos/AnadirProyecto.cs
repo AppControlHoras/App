@@ -47,5 +47,10 @@ namespace AppControlHoras.Proyectos
         {
 
         }
+
+        private void AnadirProyecto_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

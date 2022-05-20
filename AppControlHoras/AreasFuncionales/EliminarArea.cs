@@ -13,7 +13,7 @@ namespace AppControlHoras.AreaFuncional
 {
     public partial class EliminarArea : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = BBDD_HORAS; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
 
         public EliminarArea()
         {

@@ -23,26 +23,26 @@ namespace AppControlHoras.Proyectos
         {
             AnadirProyecto proyecto = new AnadirProyecto();
             proyecto.Show();
-            this.Hide();
+            
         }
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
             EliminarProyecto proyecto = new EliminarProyecto();
             proyecto.Show();
-            this.Hide();
+            
         }
 
         private void btModificar_Click(object sender, EventArgs e)
         {
             ModificarProyecto proyecto = new ModificarProyecto();
             proyecto.Show();
-            this.Hide();
+            
         }
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         public DataTable showData()

@@ -54,5 +54,10 @@ namespace AppControlHoras.Proyectos
             }
             connection.Close();
         }
+
+        private void EliminarProyecto_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

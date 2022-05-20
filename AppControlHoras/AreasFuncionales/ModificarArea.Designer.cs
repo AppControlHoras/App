@@ -50,7 +50,7 @@
             this.panel2.Controls.Add(this.lblArea);
             this.panel2.Controls.Add(this.tbArea);
             this.panel2.Controls.Add(this.btBuscar);
-            this.panel2.Location = new System.Drawing.Point(62, 89);
+            this.panel2.Location = new System.Drawing.Point(70, 84);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(240, 100);
             this.panel2.TabIndex = 31;
@@ -91,7 +91,7 @@
             this.panelModificar.Controls.Add(this.btCambiar);
             this.panelModificar.Controls.Add(this.label4);
             this.panelModificar.Controls.Add(this.tbNuevoNombre);
-            this.panelModificar.Location = new System.Drawing.Point(62, 195);
+            this.panelModificar.Location = new System.Drawing.Point(70, 190);
             this.panelModificar.Name = "panelModificar";
             this.panelModificar.Size = new System.Drawing.Size(240, 130);
             this.panelModificar.TabIndex = 30;
@@ -167,6 +167,7 @@
             this.Name = "ModificarArea";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarArea";
+            this.Load += new System.EventHandler(this.ModificarArea_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panelModificar.ResumeLayout(false);

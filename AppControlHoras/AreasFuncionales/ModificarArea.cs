@@ -13,7 +13,7 @@ namespace AppControlHoras.AreaFuncional
 {
     public partial class ModificarArea : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = BBDD_HORAS; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
 
         public ModificarArea()
         {
@@ -69,6 +69,11 @@ namespace AppControlHoras.AreaFuncional
                 MessageBox.Show("Area modificada correctamente");
             }
             connection.Close();
+        }
+
+        private void ModificarArea_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -13,7 +13,7 @@ namespace AppControlHoras.Tasas
 {
     public partial class Tasa : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = BATTISTA\\DAVIDSERVER; Initial Catalog = BBDD_HORAS; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
 
         public Tasa()
         {
@@ -50,7 +50,7 @@ namespace AppControlHoras.Tasas
 
         private DataTable showInfo()
         {
-            string query = "select idTasa, valor from Tasa";
+            string query = "SELECT ID_TASA, VALOR FROM Tasas";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable data = new DataTable();
             adapter.Fill(data);

@@ -166,6 +166,7 @@
             this.Name = "ModificarProyecto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarProyecto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModificarProyecto_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

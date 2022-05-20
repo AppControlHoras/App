@@ -166,6 +166,7 @@
             this.Name = "ModificarTipoProyecto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ModificarTipoProyecto";
+            this.Load += new System.EventHandler(this.ModificarTipoProyecto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

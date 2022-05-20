@@ -13,7 +13,7 @@ namespace AppControlHoras.TipoProyectos
 {
     public partial class ModificarTipoProyecto : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = BBDD_HORAS; Integrated Security = True");
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
         public ModificarTipoProyecto()
         {
             InitializeComponent();
@@ -59,6 +59,11 @@ namespace AppControlHoras.TipoProyectos
                 MessageBox.Show("Tipo de proyecto modificado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
+        }
+
+        private void ModificarTipoProyecto_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
