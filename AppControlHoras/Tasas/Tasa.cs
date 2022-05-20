@@ -47,7 +47,7 @@ namespace AppControlHoras.Tasas
 
         private DataTable showInfo()
         {
-            string query = "select idTasa, valor from Tasa";
+            string query = "select idTasa as 'ID Tasa', valor as 'Valor' from Tasa";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable data = new DataTable();
             adapter.Fill(data);

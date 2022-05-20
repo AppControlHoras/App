@@ -23,7 +23,7 @@ namespace AppControlHoras.Empleados
         private DataTable showInfo()
         {
             // Muestra solo los empleados que el campo fechaBaja es null, lo que quiere decir que son actuales
-            string query = "select em.idEmpleado, em.nombre, em.primerApellido, em.segundoApellido, em.email, em.fechaAlta, ta.valor as valorTasa, ar.descripcion as departamento " +
+            string query = "select em.idEmpleado as 'ID Empleado', em.nombre as 'Nombre', em.primerApellido as 'Primer Apellido', em.segundoApellido as 'Segundo Apellido', em.email as 'Email', em.fechaAlta as 'Fecha Alta', ta.valor as 'Valor Tasa', ar.descripcion as 'Nombre Departamento' " +
                             "from Empleados em " +
                             "join Tasa ta on em.idTasa=ta.idTasa " +
                             "join AreasFuncionales ar on em.idArea=ar.idArea " +
