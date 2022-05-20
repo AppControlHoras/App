@@ -8,7 +8,7 @@ Clientes: Hecho
 
 Cuentas: Hecho.
 
-Empleados: Hechas pantallas
+Empleados: Hecho
 
 EmpleadosArea: x
 
@@ -18,7 +18,7 @@ Tareas: x
 
 TareasTipo: x
 
-Tasas: Hecho, fallo en eliminar y modificar 
+Tasas: Hecho 
 
 Proyectos: Hecho.
 
