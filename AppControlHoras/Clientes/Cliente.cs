@@ -28,7 +28,7 @@ namespace AppControlHoras
 
         public DataTable showData()
         {
-            string query = "select ID_CLIENTE, DESCRIPCION from Clientes ";
+            string query = "select ID_CLIENTE as 'ID Cliente', DESCRIPCION as 'Nombre' from Clientes ";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable table = new DataTable();
             adapter.Fill(table);

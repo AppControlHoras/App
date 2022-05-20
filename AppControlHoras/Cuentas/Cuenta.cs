@@ -34,7 +34,9 @@ namespace AppControlHoras
 
         public DataTable showData()
         {
-            string query = "select * from Cuentas";
+            string query = "select cu.idCuenta as 'ID Cuenta', cu.descripcion as 'Nombre Cuenta', cl.idCliente as 'ID Cliente', cl.descripcion as 'Nombre Cliente' " +
+                            "from Cuentas cu " +
+                            "join Clientes cl on cu.idCliente=cl.idCliente";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);

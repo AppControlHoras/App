@@ -29,7 +29,7 @@ namespace AppControlHoras.AreasFuncionales
 
         public DataTable showData()
         {
-            string query = "SELECT ID_AREA, DESCRIPCION FROM AreaFuncional";
+            string query = "SELECT ID_AREA as 'ID Area', DESCRIPCION as 'Nombre' FROM AreaFuncional";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable table = new DataTable();
             adapter.Fill(table);
