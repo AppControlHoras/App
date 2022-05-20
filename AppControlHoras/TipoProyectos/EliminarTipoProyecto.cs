@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.Proyectos
+namespace AppControlHoras.TipoProyectos
 {
-    public partial class EliminarProyecto : Form
+    public partial class EliminarTipoProyecto : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = BBDD_HORAS; Integrated Security = True");
-        public EliminarProyecto()
+        public EliminarTipoProyecto()
         {
             InitializeComponent();
         }
@@ -22,7 +22,8 @@ namespace AppControlHoras.Proyectos
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string id = cbProyectos.Text;
+            string id = cbTipoPoryectos.Text;
+
             try
             {
                 if (string.IsNullOrEmpty(id))
@@ -31,26 +32,27 @@ namespace AppControlHoras.Proyectos
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("DELETE FROM Proyectos WHERE ID_PROYECTO = '" + id + "'", connection);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Tipo_Proyecto WHERE ID_TIPO_PROYECTO = '" + id + "'", connection);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Error " + ex.Source, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error" + ex.Source, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }
 
-        private void EliminarProyecto_Load(object sender, EventArgs e)
+        private void EliminarTipoProyecto_Load(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Proyectos", connection);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Tipo_Proyectos", connection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                cbProyectos.Items.Add(reader["DESCRIPCION"].ToString());
+                cbTipoPoryectos.Items.Add(reader["DESCRIPCION"].ToString());
             }
             connection.Close();
         }

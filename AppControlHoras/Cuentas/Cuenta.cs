@@ -22,6 +22,11 @@ namespace AppControlHoras
             InitializeComponent();
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+        }
+
         private void dgvCuentas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -41,7 +46,6 @@ namespace AppControlHoras
         {
             dgvCuentas.DataSource = showData();
 
-            
         }
 
         private void btAnadir_Click(object sender, EventArgs e)
@@ -64,10 +68,7 @@ namespace AppControlHoras
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-            MenuAdministracion menuAdministracion = new MenuAdministracion();
-            menuAdministracion.Show();
-            this.Hide();
-
+            this.Close();
         }
     }
 }

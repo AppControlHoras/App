@@ -21,6 +21,11 @@ namespace AppControlHoras
             InitializeComponent();
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+        }
+
         public DataTable showData()
         {
             string query = "select ID_CLIENTE, DESCRIPCION from Clientes ";
@@ -45,9 +50,7 @@ namespace AppControlHoras
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-            MenuAdministracion menuAdministracion = new MenuAdministracion();
-            menuAdministracion.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btEliminar_Click(object sender, EventArgs e)

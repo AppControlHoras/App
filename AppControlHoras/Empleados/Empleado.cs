@@ -60,9 +60,12 @@ namespace AppControlHoras.Empleados
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-            MenuAdministracion menu = new MenuAdministracion();
-            menu.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void Empleado_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
         }
     }
 }

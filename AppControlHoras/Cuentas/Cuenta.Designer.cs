@@ -146,6 +146,7 @@
             this.Name = "Cuenta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cuentas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.Load += new System.EventHandler(this.Cuentas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCuentas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).EndInit();

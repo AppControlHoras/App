@@ -51,7 +51,7 @@ namespace AppControlHoras.TipoProyectos
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void TipoProyecto_Load(object sender, EventArgs e)

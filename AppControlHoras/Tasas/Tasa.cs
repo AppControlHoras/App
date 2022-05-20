@@ -20,11 +20,14 @@ namespace AppControlHoras.Tasas
             InitializeComponent();
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+        }
+
         private void btVolver_Click(object sender, EventArgs e)
         {
-            MenuAdministracion menuAdministracion = new MenuAdministracion();
-            menuAdministracion.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void btAnadir_Click(object sender, EventArgs e)

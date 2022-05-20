@@ -154,6 +154,7 @@
             this.Name = "TipoProyecto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TipoProyecto";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.Load += new System.EventHandler(this.TipoProyecto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTipoProyectos)).EndInit();

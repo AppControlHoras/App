@@ -42,8 +42,6 @@ namespace AppControlHoras.Proyectos
 
         private void btVolver_Click(object sender, EventArgs e)
         {
-            MenuAdministracion menu = new MenuAdministracion();
-            menu.Show();
             this.Close();
         }
 
@@ -59,6 +57,11 @@ namespace AppControlHoras.Proyectos
         private void Proyectos_Load(object sender, EventArgs e)
         {
             dgvProyectos.DataSource = showData();
+        }
+
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
         }
     }
 }

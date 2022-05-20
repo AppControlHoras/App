@@ -37,11 +37,23 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.CodeParser.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.1.Core, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.1, Version=21.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\VisualBasic.PowerPacks.Vs.1.0.0\lib\Microsoft.VisualBasic.dll</HintPath>
       <Private>True</Private>
@@ -249,6 +261,18 @@
     <Compile Include="TipoProyectos\AnadirTipoProyecto.Designer.cs">
       <DependentUpon>AnadirTipoProyecto.cs</DependentUpon>
     </Compile>
+    <Compile Include="TipoProyectos\EliminarTipoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoProyectos\EliminarTipoProyecto.Designer.cs">
+      <DependentUpon>EliminarTipoProyecto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoProyectos\ModificarTipoProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoProyectos\ModificarTipoProyecto.Designer.cs">
+      <DependentUpon>ModificarTipoProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoProyectos\TipoProyecto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +342,7 @@
     <EmbeddedResource Include="Menu\Principal\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -354,6 +379,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TipoProyectos\AnadirTipoProyecto.resx">
       <DependentUpon>AnadirTipoProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoProyectos\EliminarTipoProyecto.resx">
+      <DependentUpon>EliminarTipoProyecto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TipoProyectos\ModificarTipoProyecto.resx">
+      <DependentUpon>ModificarTipoProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoProyectos\TipoProyecto.resx">
       <DependentUpon>TipoProyecto.cs</DependentUpon>
