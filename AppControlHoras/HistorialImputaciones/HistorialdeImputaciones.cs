@@ -22,6 +22,10 @@ namespace AppControlHoras
             lblUser.Text = BaseDeDatos.Username;
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+        }
         public DataTable ShowData()
         {
             string query = "Select * FROM Imputaciones";

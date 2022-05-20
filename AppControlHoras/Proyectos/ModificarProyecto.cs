@@ -26,7 +26,11 @@ namespace AppControlHoras.Proyectos
 
             if (string.IsNullOrEmpty(proyecto))
             {
-                SqlCommand cmd = new SqlCommand("SELECT * FROM Proyectos WHERE DESCRIPCION = '"+ proyecto +"'",connection);
+                MessageBox.Show("El proyecto " + proyecto + " no existe. Introduce un nombre correcto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                SqlCommand cmd = new SqlCommand("SELECT * FROM Proyectos WHERE DESCRIPCION = '" + proyecto + "'", connection);
                 SqlDataReader reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
@@ -34,11 +38,8 @@ namespace AppControlHoras.Proyectos
                     lblIDProyecto.Text = reader["ID_PROYECTO"].ToString();
                     tbNuevoNombre.Text = reader["DESCRIPCION"].ToString();
                 }
-                else
-                {
-                    MessageBox.Show("El proyecto" + proyecto + " no existe. Introduce un nombre correcto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
             }
+            
             connection.Close();
         }
 

@@ -21,6 +21,8 @@ namespace AppControlHoras.Cuentas
             InitializeComponent();
         }
 
+
+
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();

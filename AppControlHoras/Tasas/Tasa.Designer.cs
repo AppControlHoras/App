@@ -146,6 +146,7 @@
             this.Name = "Tasa";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tasa";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
             this.Load += new System.EventHandler(this.Tasa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).EndInit();

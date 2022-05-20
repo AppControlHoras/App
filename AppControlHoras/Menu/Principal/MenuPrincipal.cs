@@ -30,6 +30,11 @@ namespace AppControlHoras
            // }
         }
 
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void BtCerrarSesion_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -40,6 +45,8 @@ namespace AppControlHoras
             MenuAdministracion menuAdministracion = new MenuAdministracion();
             this.Hide();
             menuAdministracion.Show();
+
+            menuAdministracion.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
         private void BtImputacion_Click(object sender, EventArgs e)

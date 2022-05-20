@@ -37,6 +37,7 @@
             this.PbCodice = new System.Windows.Forms.PictureBox();
             this.btAreaFuncional = new System.Windows.Forms.Button();
             this.btProyectos = new System.Windows.Forms.Button();
+            this.btTipoProyectos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,12 +142,26 @@
             this.btProyectos.UseVisualStyleBackColor = false;
             this.btProyectos.Click += new System.EventHandler(this.btProyectos_Click);
             // 
+            // btTipoProyectos
+            // 
+            this.btTipoProyectos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btTipoProyectos.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btTipoProyectos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTipoProyectos.Location = new System.Drawing.Point(320, 162);
+            this.btTipoProyectos.Name = "btTipoProyectos";
+            this.btTipoProyectos.Size = new System.Drawing.Size(75, 23);
+            this.btTipoProyectos.TabIndex = 16;
+            this.btTipoProyectos.Text = "Tipos";
+            this.btTipoProyectos.UseVisualStyleBackColor = false;
+            this.btTipoProyectos.Click += new System.EventHandler(this.btTipoProyectos_Click);
+            // 
             // MenuAdministracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btTipoProyectos);
             this.Controls.Add(this.btProyectos);
             this.Controls.Add(this.btTasas);
             this.Controls.Add(this.btEmpleados);
@@ -159,6 +174,8 @@
             this.Name = "MenuAdministracion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdministracion";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_FormClosing);
+            this.Load += new System.EventHandler(this.MenuAdministracion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).EndInit();
             this.ResumeLayout(false);
 
@@ -174,5 +191,6 @@
         private System.Windows.Forms.Button btTasas;
         private System.Windows.Forms.Button btAreaFuncional;
         private System.Windows.Forms.Button btProyectos;
+        private System.Windows.Forms.Button btTipoProyectos;
     }
 }

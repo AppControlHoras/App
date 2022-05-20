@@ -20,7 +20,12 @@ namespace AppControlHoras.AreasFuncionales
         {
             InitializeComponent();
         }
-        
+
+        private void Form_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
+        }
+
 
         public DataTable showData()
         {
