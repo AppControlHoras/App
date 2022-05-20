@@ -22,6 +22,6 @@ Tasas: Hecho
 
 Proyectos: Hecho.
 
-ProyectosTipo: En Progreso
+ProyectosTipo: Hecho.
 
 Historial Imputaciones: Hecho.
