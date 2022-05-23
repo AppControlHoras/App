@@ -33,14 +33,9 @@ namespace AppControlHoras.TipoProyectos
                 else
                 {
                     SqlCommand cmd = new SqlCommand("DELETE FROM Tipo_Proyecto WHERE ID_TIPO_PROYECTO = '" + id + "'", connection);
-                    DialogResult result = MessageBox.Show("¿Estas seguro de que desea eliminar " + id + "?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                    if (result == DialogResult.Yes)
-                    {
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        cbTipoPoryectos.ResetText();
-                        cbTipoPoryectos.Items.Remove(id);
-                    }
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
             }
             catch(Exception ex)

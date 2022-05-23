@@ -38,7 +38,6 @@
             this.btAreaFuncional = new System.Windows.Forms.Button();
             this.btProyectos = new System.Windows.Forms.Button();
             this.btTipoProyectos = new System.Windows.Forms.Button();
-            this.btTareas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,26 +155,12 @@
             this.btTipoProyectos.UseVisualStyleBackColor = false;
             this.btTipoProyectos.Click += new System.EventHandler(this.btTipoProyectos_Click);
             // 
-            // btTareas
-            // 
-            this.btTareas.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btTareas.FlatAppearance.BorderColor = System.Drawing.Color.Red;
-            this.btTareas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTareas.Location = new System.Drawing.Point(432, 162);
-            this.btTareas.Name = "btTareas";
-            this.btTareas.Size = new System.Drawing.Size(75, 23);
-            this.btTareas.TabIndex = 17;
-            this.btTareas.Text = "Tareas";
-            this.btTareas.UseVisualStyleBackColor = false;
-            this.btTareas.Click += new System.EventHandler(this.btTareas_Click);
-            // 
             // MenuAdministracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btTareas);
             this.Controls.Add(this.btTipoProyectos);
             this.Controls.Add(this.btProyectos);
             this.Controls.Add(this.btTasas);
@@ -207,6 +192,5 @@
         private System.Windows.Forms.Button btAreaFuncional;
         private System.Windows.Forms.Button btProyectos;
         private System.Windows.Forms.Button btTipoProyectos;
-        private System.Windows.Forms.Button btTareas;
     }
 }

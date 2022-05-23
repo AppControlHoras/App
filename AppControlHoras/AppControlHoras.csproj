@@ -156,12 +156,6 @@
     <Compile Include="EjemploFiltradoComboBox\FiltradoComboBox.Designer.cs">
       <DependentUpon>FiltradoComboBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmpleadosArea\EmpleadoArea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="EmpleadosArea\EmpleadoArea.Designer.cs">
-      <DependentUpon>EmpleadoArea.cs</DependentUpon>
-    </Compile>
     <Compile Include="Empleados\AnadirEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,12 +187,6 @@
       <DependentUpon>HistorialdeImputaciones.cs</DependentUpon>
     </Compile>
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="Imputaciones\Imputacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Imputaciones\Imputacion.Designer.cs">
-      <DependentUpon>Imputacion.cs</DependentUpon>
-    </Compile>
     <Compile Include="InicioSesion\InicioDeSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -242,30 +230,6 @@
     </Compile>
     <Compile Include="Proyectos\Proyectos.Designer.cs">
       <DependentUpon>Proyectos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tareas\AnadirTarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tareas\AnadirTarea.Designer.cs">
-      <DependentUpon>AnadirTarea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tareas\EliminarTarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tareas\EliminarTarea.Designer.cs">
-      <DependentUpon>EliminarTarea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tareas\ModificarTarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tareas\ModificarTarea.Designer.cs">
-      <DependentUpon>ModificarTarea.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Tareas\Tarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Tareas\Tarea.Designer.cs">
-      <DependentUpon>Tarea.cs</DependentUpon>
     </Compile>
     <Compile Include="Tasas\AnadirTasa.cs">
       <SubType>Form</SubType>
@@ -314,12 +278,6 @@
     </Compile>
     <Compile Include="TipoProyectos\TipoProyecto.Designer.cs">
       <DependentUpon>TipoProyecto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TipoTareas\TipoTarea.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TipoTareas\TipoTarea.Designer.cs">
-      <DependentUpon>TipoTarea.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AreasFuncionales\Area.resx">
       <DependentUpon>Area.cs</DependentUpon>
@@ -407,18 +365,6 @@
     <EmbeddedResource Include="Proyectos\Proyectos.resx">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tareas\AnadirTarea.resx">
-      <DependentUpon>AnadirTarea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tareas\EliminarTarea.resx">
-      <DependentUpon>EliminarTarea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tareas\ModificarTarea.resx">
-      <DependentUpon>ModificarTarea.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Tareas\Tarea.resx">
-      <DependentUpon>Tarea.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Tasas\AnadirTasa.resx">
       <DependentUpon>AnadirTasa.cs</DependentUpon>
     </EmbeddedResource>
@@ -484,6 +430,11 @@
   <ItemGroup>
     <None Include="Resources\MostrarPsswd.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EmpleadosArea\" />
+    <Folder Include="Imputaciones\" />
+    <Folder Include="Tareas\" />
+    <Folder Include="TipoTareas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

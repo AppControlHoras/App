@@ -93,20 +93,9 @@ namespace AppControlHoras
             proyecto.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
-        private void btTareas_Click(object sender, EventArgs e)
-        {
-            Tareas.Tarea tarea = new Tareas.Tarea();
-            tarea.Show();
-            this.Hide();
-
-            tarea.FormClosing += new FormClosingEventHandler(Form_FormClosing);
-        }
-
         private void MenuAdministracion_Load(object sender, EventArgs e)
         {
 
         }
-
-
     }
 }

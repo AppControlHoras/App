@@ -54,7 +54,7 @@ namespace AppControlHoras.TipoProyectos
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("UPDATE Tipo_PROYECTO SET DESCRIPCION = '" + tipo + "' WHERE ID_PROYECTO = '" + idTipoProyecto + "'", connection);
+                SqlCommand cmd = new SqlCommand("UPDATE Tipo_P^ROYECTO SET DESCRIPCION = '" + tipo + "' WHERE ID_PROYECTO = '" + idTipoProyecto + "'", connection);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Tipo de proyecto modificado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

@@ -37,10 +37,5 @@ namespace AppControlHoras.TipoProyectos
             }
             connection.Close();
         }
-
-        private void AnadirTipoProyecto_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
