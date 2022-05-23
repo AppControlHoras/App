@@ -156,6 +156,30 @@
     <Compile Include="EjemploFiltradoComboBox\FiltradoComboBox.Designer.cs">
       <DependentUpon>FiltradoComboBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmpleadosArea\AnadirEmpleadoArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosArea\AnadirEmpleadoArea.Designer.cs">
+      <DependentUpon>AnadirEmpleadoArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosArea\EliminarEmpleadoArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosArea\EliminarEmpleadoArea.Designer.cs">
+      <DependentUpon>EliminarEmpleadoArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosArea\EmpleadosArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosArea\EmpleadosArea.Designer.cs">
+      <DependentUpon>EmpleadosArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpleadosArea\ModificarEmpleadoArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpleadosArea\ModificarEmpleadoArea.Designer.cs">
+      <DependentUpon>ModificarEmpleadoArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empleados\AnadirEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -324,6 +348,15 @@
     <EmbeddedResource Include="EjemploFiltradoComboBox\FiltradoComboBox.resx">
       <DependentUpon>FiltradoComboBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosArea\AnadirEmpleadoArea.resx">
+      <DependentUpon>AnadirEmpleadoArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosArea\EliminarEmpleadoArea.resx">
+      <DependentUpon>EliminarEmpleadoArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosArea\EmpleadosArea.resx">
+      <DependentUpon>EmpleadosArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados\AnadirEmpleado.resx">
       <DependentUpon>AnadirEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -440,7 +473,6 @@
     <None Include="Resources\MostrarPsswd.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EmpleadosArea\" />
     <Folder Include="Imputaciones\" />
     <Folder Include="TipoTareas\" />
   </ItemGroup>
