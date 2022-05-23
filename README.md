@@ -10,13 +10,13 @@ Cuentas: Hecho.
 
 Empleados: Hecho
 
-EmpleadosArea: x
+EmpleadosArea: Creada la carpeta.
 
-Imputaciones: x
+Imputaciones: Creada la carpeta.
 
-Tareas: x
+Tareas: En Progreso.
 
-TareasTipo: x
+TareasTipo: Creada la carpeta.
 
 Tasas: Hecho 
 
