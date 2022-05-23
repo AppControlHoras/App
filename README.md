@@ -14,7 +14,7 @@ EmpleadosArea: x
 
 Imputaciones: x
 
-Tareas: x
+Tareas: En Progreso.
 
 TareasTipo: x
 
