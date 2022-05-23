@@ -231,6 +231,12 @@
     <Compile Include="Proyectos\Proyectos.Designer.cs">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tareas\Tarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tareas\Tarea.Designer.cs">
+      <DependentUpon>Tarea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tasas\AnadirTasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -365,6 +371,9 @@
     <EmbeddedResource Include="Proyectos\Proyectos.resx">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tareas\Tarea.resx">
+      <DependentUpon>Tarea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tasas\AnadirTasa.resx">
       <DependentUpon>AnadirTasa.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,7 +442,6 @@
   <ItemGroup>
     <Folder Include="EmpleadosArea\" />
     <Folder Include="Imputaciones\" />
-    <Folder Include="Tareas\" />
     <Folder Include="TipoTareas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

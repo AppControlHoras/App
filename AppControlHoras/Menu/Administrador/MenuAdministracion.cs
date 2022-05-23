@@ -97,5 +97,19 @@ namespace AppControlHoras
         {
 
         }
+
+        private void btTareas_Click(object sender, EventArgs e)
+        {
+            Tareas.Tarea tarea = new Tareas.Tarea();
+            tarea.Show();
+            this.Hide();
+        }
+
+        private void btTareas_Click_1(object sender, EventArgs e)
+        {
+            Tareas.Tarea tarea = new Tareas.Tarea();
+            tarea.Show();
+            this.Hide();
+        }
     }
 }
