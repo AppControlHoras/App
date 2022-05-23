@@ -103,6 +103,7 @@
             this.btAnadir.TabIndex = 11;
             this.btAnadir.Text = "Añadir";
             this.btAnadir.UseVisualStyleBackColor = false;
+            this.btAnadir.Click += new System.EventHandler(this.btAnadir_Click);
             // 
             // btVolver
             // 

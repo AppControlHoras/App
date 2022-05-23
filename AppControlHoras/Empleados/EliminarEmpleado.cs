@@ -25,12 +25,12 @@ namespace AppControlHoras.Empleados
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            int idEmpleado = Convert.ToInt32(cbIdEmpleado.Text);
+            string idEmpleado = cbIdEmpleado.Text;
             string fechaBaja = dtpFechaBaja.Value.Date.ToString("dd/MM/yyyy");
             string query = "update Empleados set fechaBaja='" + fechaBaja + "' where idEmpleado='" + idEmpleado + "'";
             
             // Habria que hacer un if en el que comparara la fechaBaja con fechaAlta y si es mas antigua de error
-            if (idEmpleado <= 0)
+            if (string.IsNullOrEmpty(idEmpleado))
             {
                 MessageBox.Show("Debes seleccionar un id");
             }

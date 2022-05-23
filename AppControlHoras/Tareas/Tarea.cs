@@ -35,5 +35,10 @@ namespace AppControlHoras.Tareas
         {
             dgvTareas.DataSource = showInfo();
         }
+
+        private void btAnadir_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
