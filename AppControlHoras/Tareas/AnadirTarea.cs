@@ -9,12 +9,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.TipoProyectos
+namespace AppControlHoras.Tareas
 {
-    public partial class AnadirTipoProyecto : Form
+    public partial class AnadirTarea : Form
     {
         private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
-        public AnadirTipoProyecto()
+        public AnadirTarea()
         {
             InitializeComponent();
         }
@@ -22,25 +22,20 @@ namespace AppControlHoras.TipoProyectos
         private void btAnadir_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string tipo = tbTipoProyecto.Text;
+            string tarea = tbTarea.Text;
 
-            if (string.IsNullOrEmpty(tipo))
+            if (string.IsNullOrEmpty(tarea))
             {
-                MessageBox.Show("Debes introducir el tipo de proyecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debes introducir una tarea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                SqlCommand cmd = new SqlCommand("INSERT INTO Tipo_Proyecto(DESCRIPCION) VALUES('"+ tipo + "')", connection );
+                SqlCommand cmd = new SqlCommand("INSERT INTO Tareas(DESCRIPCION) VALUES('" + tarea + "')", connection);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Añadido correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Introducido correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             connection.Close();
-        }
-
-        private void AnadirTipoProyecto_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

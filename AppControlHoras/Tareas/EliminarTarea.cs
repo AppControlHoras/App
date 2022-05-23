@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AppControlHoras.TipoProyectos
+namespace AppControlHoras.Tareas
 {
-    public partial class EliminarTipoProyecto : Form
+    public partial class EliminarTarea : Form
     {
-        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = BBDD_HORAS; Integrated Security = True");
-        public EliminarTipoProyecto()
+        private SqlConnection connection = new SqlConnection("Data Source = TERESA\\SERVERSQL; Initial Catalog = ControlHoras; Integrated Security = True");
+
+        public EliminarTarea()
         {
             InitializeComponent();
         }
@@ -22,42 +23,41 @@ namespace AppControlHoras.TipoProyectos
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            string id = cbTipoPoryectos.Text;
+            string id = cbTareas.Text;
 
             try
             {
                 if (string.IsNullOrEmpty(id))
                 {
-                    MessageBox.Show("Selecciona un ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Seleccione una tarea", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    SqlCommand cmd = new SqlCommand("DELETE FROM Tipo_Proyecto WHERE ID_TIPO_PROYECTO = '" + id + "'", connection);
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Tareas WHERE DESCRIPCION = '"+ id + "'", connection);
                     DialogResult result = MessageBox.Show("¿Estas seguro de que desea eliminar " + id + "?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (result == DialogResult.Yes)
                     {
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        cbTipoPoryectos.ResetText();
-                        cbTipoPoryectos.Items.Remove(id);
+                        cbTareas.ResetText();
+                        cbTareas.Items.Remove(id);
                     }
                 }
-            }
-            catch(Exception ex)
+            } catch(Exception ex)
             {
                 MessageBox.Show("Error" + ex.Source, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             connection.Close();
         }
 
-        private void EliminarTipoProyecto_Load(object sender, EventArgs e)
+        private void EliminarTarea_Load(object sender, EventArgs e)
         {
             connection.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Tipo_Proyectos", connection);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Tareas", connection);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
-                cbTipoPoryectos.Items.Add(reader["DESCRIPCION"].ToString());
+                cbTareas.Items.Add(reader["DESCRIPCION"].ToString());
             }
             connection.Close();
         }
