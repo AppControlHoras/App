@@ -51,13 +51,13 @@ namespace AppControlHoras.Empleados
             string segundoApellido = tbSegundoApellido.Text;
             string email = tbEmail.Text;
             string fechaAlta = dtpFechaAlta.Value.Date.ToString("dd/MM/yyyy");
-            int idTasa = Convert.ToInt32(cbTasa.Text);
-            int idArea = Convert.ToInt32(cbArea.Text);
+            string idTasa = cbTasa.Text;
+            string idArea = cbArea.Text;
 
             string query = "insert into Empleados(nombre, primerApellido, segundoApellido, email, fechaAlta, idArea, idTasa) " +
                             "values ('" + nombre + "', '" + primerApellido + "', '" + segundoApellido + "', '" + email + "', '" + fechaAlta + "', '" + idArea + "', '" + idTasa + "')";
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(primerApellido) || string.IsNullOrEmpty(segundoApellido) 
-                || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(fechaAlta) || idTasa <= 0 || idArea <= 0)
+                || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(fechaAlta) || string.IsNullOrEmpty(idTasa) || string.IsNullOrEmpty(idArea))
             {
                 MessageBox.Show("Debes rellenar todos los campos");
             }
