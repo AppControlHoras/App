@@ -28,7 +28,10 @@ namespace AppControlHoras
         }
         public DataTable ShowData()
         {
-            string query = "Select * FROM Imputaciones";
+            string query = "Select im.FECHA_IMPUTACION as 'Fecha imputacion', im.HORAS as 'Horas', ta.ID_TAREA as 'ID Tarea', em-ID_EMPLEADO as 'ID Empleado'" + 
+                "FROM Imputaciones im" +
+                "INNER JOIN Tareas ta on im.ID_TAREA=ta.ID_TAREA" +
+                "INNER JOIN Empleados em on im.ID_EMPLEADO=em.ID_EMPLEADO";
             SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
             sqlDataAdapter.Fill(dataTable);

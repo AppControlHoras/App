@@ -430,6 +430,11 @@
   <ItemGroup>
     <None Include="Resources\MostrarPsswd.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="EmpleadosArea\" />
+    <Folder Include="Imputaciones\" />
+    <Folder Include="Tareas\" />
+    <Folder Include="TipoTareas\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

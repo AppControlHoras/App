@@ -51,7 +51,7 @@ namespace AppControlHoras.TipoProyectos
 
         private DataTable showInfo()
         {
-            string query = "SELECT ID_TIPO_PROYECTO, DESCRIPCION FROM Tipo_Proyecto";
+            string query = "SELECT ID_TIPO_PROYECTO AS 'ID Tipo', DESCRIPCION AS 'Nombre' FROM Tipo_Proyecto";
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable data = new DataTable();
             adapter.Fill(data);
