@@ -40,5 +40,12 @@ namespace AppControlHoras.Tareas
         {
             
         }
+
+        private void btVolver_Click(object sender, EventArgs e)
+        {
+            MenuAdministracion menuAdministracion = new MenuAdministracion();
+            menuAdministracion.Show();
+            this.Hide();
+        }
     }
 }

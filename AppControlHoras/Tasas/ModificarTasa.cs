@@ -37,10 +37,10 @@ namespace AppControlHoras.Tasas
         private void btBuscar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            int idTasa = Convert.ToInt32(cbIdTasas.Text);
+            string idTasa = cbIdTasas.Text;
 
             string query = "select valor from Tasa where idTasa='" + idTasa + "'";
-            if (cbIdTasas.Items.Count <= 0)
+            if (string.IsNullOrEmpty(idTasa))
             {
                 MessageBox.Show("Debes seleccionar un id");
             }

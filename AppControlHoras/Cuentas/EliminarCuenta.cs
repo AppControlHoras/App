@@ -26,9 +26,9 @@ namespace AppControlHoras.Cuentas
         private void btEliminar_Click(object sender, EventArgs e)
         {
             connection.Open();
-            int idCuenta = Convert.ToInt32(tbIdCuenta.Text);
+            string idCuenta = tbIdCuenta.Text;
             string query = "delete from Cuentas where idCuenta='" + idCuenta + "'";
-            if (string.IsNullOrEmpty(tbIdCuenta.Text))
+            if (string.IsNullOrEmpty(idCuenta))
             {
                 MessageBox.Show("Introduce el id de la cuenta");
             }

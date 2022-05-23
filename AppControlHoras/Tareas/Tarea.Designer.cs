@@ -116,6 +116,7 @@
             this.btVolver.TabIndex = 14;
             this.btVolver.Text = "Volver";
             this.btVolver.UseVisualStyleBackColor = false;
+            this.btVolver.Click += new System.EventHandler(this.btVolver_Click);
             // 
             // PbCodice
             // 
@@ -141,6 +142,7 @@
             this.Controls.Add(this.dgvTareas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Tarea";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tarea";
             this.Load += new System.EventHandler(this.Tarea_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTareas)).EndInit();

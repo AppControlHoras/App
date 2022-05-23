@@ -36,11 +36,11 @@ namespace AppControlHoras.Tasas
         private void btAnadir_Click(object sender, EventArgs e)
         {
             connection.Open();
-            var idTasa = Convert.ToInt32(cbTasas.Text);
+            string idTasa = cbTasas.Text;
             string query = "delete from Tasa where idTasa ='" + idTasa + "'";
-            if (cbTasas.Items.Count <=0)
+            if (string.IsNullOrEmpty(idTasa))
             {
-                MessageBox.Show("Debes seleccionar la tasa que quieres eliminar");
+                MessageBox.Show("Debes seleccionar la tasa");
             }
             else
             {

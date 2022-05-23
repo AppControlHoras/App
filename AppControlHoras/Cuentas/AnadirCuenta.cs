@@ -24,16 +24,12 @@ namespace AppControlHoras.Cuentas
         {
             connection.Open();
             string descripcion = tbDescripcion.Text;
-            int idCliente = Convert.ToInt32(tbIdCliente.Text);
+            string idCliente = tbIdCliente.Text;
             string query = "insert into Cuentas(idCliente, descripcion) values('" + idCliente + "','" + descripcion + "')";
       
-            if (string.IsNullOrEmpty(descripcion))
+            if (string.IsNullOrEmpty(descripcion) || string.IsNullOrEmpty(idCliente))
             {
-                MessageBox.Show("Debes rellenar la descripcion");
-            }
-            else if (string.IsNullOrEmpty(tbIdCliente.Text))
-            {
-                MessageBox.Show("Debes introducir el id del cliente");
+                MessageBox.Show("Debes introducir todos los datos");
             }
             else
             {

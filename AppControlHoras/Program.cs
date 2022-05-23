@@ -16,7 +16,7 @@ namespace AppControlHoras
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MenuAdministracion());
+            Application.Run(new MenuPrincipal());
         }
     }
 }
