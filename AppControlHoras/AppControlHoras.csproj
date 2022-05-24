@@ -428,6 +428,9 @@
     <EmbeddedResource Include="Tareas\AñadirTarea.resx">
       <DependentUpon>AñadirTarea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Tareas\EliminarTarea.resx">
+      <DependentUpon>EliminarTarea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tareas\Tarea.resx">
       <DependentUpon>Tarea.cs</DependentUpon>
     </EmbeddedResource>

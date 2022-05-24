@@ -30,14 +30,14 @@ namespace AppControlHoras.Cuentas
             string query = "delete from Cuentas where idCuenta='" + idCuenta + "'";
             if (string.IsNullOrEmpty(idCuenta))
             {
-                MessageBox.Show("Introduce el id de la cuenta");
+                MessageBox.Show("Introduce el id de la cuenta", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
 
-                MessageBox.Show("Cuenta eliminada correctamente");
+                MessageBox.Show("Cuenta eliminada correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

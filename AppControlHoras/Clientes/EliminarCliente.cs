@@ -43,13 +43,13 @@ namespace AppControlHoras.Clientes
             {
                 if (string.IsNullOrEmpty(descripcion))
                 {
-                    MessageBox.Show("Selecciona un id");
+                    MessageBox.Show("Selecciona un id", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
                     SqlCommand command = new SqlCommand(query, connection);
                     command.ExecuteNonQuery();
-                    MessageBox.Show("Eliminado correctamente");
+                    MessageBox.Show("Eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             catch (Exception ex)

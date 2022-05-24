@@ -29,13 +29,13 @@ namespace AppControlHoras.Cuentas
       
             if (string.IsNullOrEmpty(descripcion) || string.IsNullOrEmpty(idCliente))
             {
-                MessageBox.Show("Debes introducir todos los datos");
+                MessageBox.Show("Debes introducir todos los datos", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cuenta añadida correctamente");
+                MessageBox.Show("Cuenta añadida correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

@@ -31,12 +31,12 @@ namespace AppControlHoras.Tareas
                             "values('" + descripcion + "', '"+ fechaAlta + "', '" + idProyecto + "')";
             if (string.IsNullOrEmpty(idProyecto) || string.IsNullOrEmpty(descripcion) || string.IsNullOrEmpty(fechaAlta))
             {
-                MessageBox.Show("Debes rellenar todos los campos");
+                MessageBox.Show("Debes rellenar todos los campos", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             } else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Tarea añadida correctamente");
+                MessageBox.Show("Tarea añadida correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

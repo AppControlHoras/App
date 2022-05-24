@@ -32,13 +32,13 @@ namespace AppControlHoras.Empleados
             // Habria que hacer un if en el que comparara la fechaBaja con fechaAlta y si es mas antigua de error
             if (string.IsNullOrEmpty(idEmpleado))
             {
-                MessageBox.Show("Debes seleccionar un id");
+                MessageBox.Show("Debes seleccionar un id", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Empleado eliminado correctamente");
+                MessageBox.Show("Empleado eliminado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

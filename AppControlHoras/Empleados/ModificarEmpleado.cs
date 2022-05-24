@@ -29,7 +29,7 @@ namespace AppControlHoras.Empleados
                             "where idEmpleado='" + idEmpleado + "'";
             if (string.IsNullOrEmpty(idEmpleado))
             {
-                MessageBox.Show("Debes seleccionar el id del empleado");
+                MessageBox.Show("Debes seleccionar el id del empleado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -87,13 +87,13 @@ namespace AppControlHoras.Empleados
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(primerApellido) || string.IsNullOrEmpty(segundoApellido) 
                 || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(tasa) || string.IsNullOrEmpty(area))
             {
-                MessageBox.Show("Todos los campos deben rellenarse");
+                MessageBox.Show("Todos los campos deben rellenarse", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Empleado modificado correctamente");
+                MessageBox.Show("Empleado modificado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

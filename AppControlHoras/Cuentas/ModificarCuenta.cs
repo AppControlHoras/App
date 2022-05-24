@@ -27,7 +27,7 @@ namespace AppControlHoras.Cuentas
             string query = "select idCuenta, descripcion from Cuentas where descripcion='" + descripcion + "'";
             if (string.IsNullOrEmpty(descripcion))
             {
-                MessageBox.Show("Debes introducir el nombre");
+                MessageBox.Show("Debes introducir el nombre", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -51,13 +51,13 @@ namespace AppControlHoras.Cuentas
             string query = "update Cuentas set descripcion='" + nuevoNombre + "' where idCuenta='" + idCuenta + "'";
             if (string.IsNullOrEmpty(nuevoNombre))
             {
-                MessageBox.Show("El campo no puede estar vacio. Introduce un nuevo nombre");
+                MessageBox.Show("El campo no puede estar vacio. Introduce un nuevo nombre", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cuenta modificada correctamente ");
+                MessageBox.Show("Cuenta modificada correctamente ", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 panelModificar.Visible = false;
             }
             connection.Close();

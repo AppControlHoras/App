@@ -28,13 +28,13 @@ namespace AppControlHoras.Clientes
 
             if (string.IsNullOrEmpty(nombreCliente))
             {
-                MessageBox.Show("Debes introducir el nombre del cliente");
+                MessageBox.Show("Debes introducir el nombre del cliente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Añadido correctamente");
+                MessageBox.Show("Añadido correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

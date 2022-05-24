@@ -29,7 +29,7 @@ namespace AppControlHoras.Clientes
                             "where descripcion='" + nombreCliente + "'";
             if (string.IsNullOrEmpty(nombreCliente))
             {
-                MessageBox.Show("Debes introducir el nombre del cliente");
+                MessageBox.Show("Debes introducir el nombre del cliente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -43,7 +43,7 @@ namespace AppControlHoras.Clientes
                 }
                 else
                 {
-                    MessageBox.Show("El cliente con nombre " + nombreCliente + " no existe. Introduce un nombre correcto");
+                    MessageBox.Show("El cliente con nombre " + nombreCliente + " no existe. Introduce un nombre correcto", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             connection.Close();
@@ -60,13 +60,13 @@ namespace AppControlHoras.Clientes
 
             if (string.IsNullOrEmpty(nuevoNombre))
             {
-                MessageBox.Show("Debes introducir un nombre nuevo");
+                MessageBox.Show("Debes introducir un nombre nuevo", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Cliente modificado correctamente");
+                MessageBox.Show("Cliente modificado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }

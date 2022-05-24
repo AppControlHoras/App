@@ -59,13 +59,13 @@ namespace AppControlHoras.Empleados
             if (string.IsNullOrEmpty(nombre) || string.IsNullOrEmpty(primerApellido) || string.IsNullOrEmpty(segundoApellido) 
                 || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(fechaAlta) || string.IsNullOrEmpty(idTasa) || string.IsNullOrEmpty(idArea))
             {
-                MessageBox.Show("Debes rellenar todos los campos");
+                MessageBox.Show("Debes rellenar todos los campos", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 SqlCommand command = new SqlCommand(query, connection);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Empleado creado correctamente");
+                MessageBox.Show("Empleado creado correctamente", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
         }
