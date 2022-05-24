@@ -103,6 +103,8 @@ namespace AppControlHoras
             Tareas.Tarea tarea = new Tareas.Tarea();
             tarea.Show();
             this.Hide();
+
+            tarea.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
 
         private void btTareas_Click_1(object sender, EventArgs e)
@@ -110,6 +112,15 @@ namespace AppControlHoras
             Tareas.Tarea tarea = new Tareas.Tarea();
             tarea.Show();
             this.Hide();
+        }
+
+        private void btEmpleadosArea_Click(object sender, EventArgs e)
+        {
+            EmpleadosArea.EmpleadosArea area = new EmpleadosArea.EmpleadosArea();
+            area.Show();
+            this.Hide();
+
+            area.FormClosing += new FormClosingEventHandler(Form_FormClosing);
         }
     }
 }
