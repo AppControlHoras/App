@@ -39,6 +39,7 @@
             this.btTipoProyectos = new System.Windows.Forms.Button();
             this.btTareas = new System.Windows.Forms.Button();
             this.PbCodice = new System.Windows.Forms.PictureBox();
+            this.btEmpleadosArea = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PbCodice)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,11 +139,11 @@
             this.btTipoProyectos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btTipoProyectos.FlatAppearance.BorderColor = System.Drawing.Color.Red;
             this.btTipoProyectos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTipoProyectos.Location = new System.Drawing.Point(320, 162);
+            this.btTipoProyectos.Location = new System.Drawing.Point(311, 162);
             this.btTipoProyectos.Name = "btTipoProyectos";
-            this.btTipoProyectos.Size = new System.Drawing.Size(75, 23);
+            this.btTipoProyectos.Size = new System.Drawing.Size(94, 23);
             this.btTipoProyectos.TabIndex = 16;
-            this.btTipoProyectos.Text = "Tipos";
+            this.btTipoProyectos.Text = "Tipo Proyectos";
             this.btTipoProyectos.UseVisualStyleBackColor = false;
             this.btTipoProyectos.Click += new System.EventHandler(this.btTipoProyectos_Click);
             // 
@@ -169,12 +170,26 @@
             this.PbCodice.TabIndex = 9;
             this.PbCodice.TabStop = false;
             // 
+            // btEmpleadosArea
+            // 
+            this.btEmpleadosArea.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btEmpleadosArea.FlatAppearance.BorderColor = System.Drawing.Color.Red;
+            this.btEmpleadosArea.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEmpleadosArea.Location = new System.Drawing.Point(534, 112);
+            this.btEmpleadosArea.Name = "btEmpleadosArea";
+            this.btEmpleadosArea.Size = new System.Drawing.Size(95, 23);
+            this.btEmpleadosArea.TabIndex = 18;
+            this.btEmpleadosArea.Text = "Empleados-Area";
+            this.btEmpleadosArea.UseVisualStyleBackColor = false;
+            this.btEmpleadosArea.Click += new System.EventHandler(this.btEmpleadosArea_Click);
+            // 
             // MenuAdministracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btEmpleadosArea);
             this.Controls.Add(this.btTareas);
             this.Controls.Add(this.btTipoProyectos);
             this.Controls.Add(this.btProyectos);
@@ -208,5 +223,6 @@
         private System.Windows.Forms.Button btProyectos;
         private System.Windows.Forms.Button btTipoProyectos;
         private System.Windows.Forms.Button btTareas;
+        private System.Windows.Forms.Button btEmpleadosArea;
     }
 }
