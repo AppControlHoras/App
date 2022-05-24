@@ -10,7 +10,7 @@ Cuentas: Hecho.
 
 Empleados: Hecho
 
-EmpleadosArea: En Progreso.
+EmpleadosArea: Hecho.
 
 Imputaciones: x
 
