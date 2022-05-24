@@ -38,13 +38,22 @@ namespace AppControlHoras.Tareas
 
         private void btAnadir_Click(object sender, EventArgs e)
         {
-            
+            AñadirTarea añadir = new AñadirTarea();
+            añadir.Show();
+            this.Hide();
         }
 
         private void btVolver_Click(object sender, EventArgs e)
         {
             MenuAdministracion menuAdministracion = new MenuAdministracion();
             menuAdministracion.Show();
+            this.Hide();
+        }
+
+        private void btEliminar_Click(object sender, EventArgs e)
+        {
+            EliminarTarea eliminar = new EliminarTarea();
+            eliminar.Show();
             this.Hide();
         }
     }

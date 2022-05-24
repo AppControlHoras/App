@@ -255,6 +255,24 @@
     <Compile Include="Proyectos\Proyectos.Designer.cs">
       <DependentUpon>Proyectos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Tareas\AñadirTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tareas\AñadirTarea.Designer.cs">
+      <DependentUpon>AñadirTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tareas\EliminarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tareas\EliminarTarea.Designer.cs">
+      <DependentUpon>EliminarTarea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tareas\ModificarTarea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tareas\ModificarTarea.Designer.cs">
+      <DependentUpon>ModificarTarea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tareas\Tarea.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -403,6 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Proyectos\Proyectos.resx">
       <DependentUpon>Proyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tareas\AñadirTarea.resx">
+      <DependentUpon>AñadirTarea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tareas\Tarea.resx">
       <DependentUpon>Tarea.cs</DependentUpon>

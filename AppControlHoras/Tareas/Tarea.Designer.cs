@@ -91,6 +91,7 @@
             this.btEliminar.TabIndex = 12;
             this.btEliminar.Text = "Eliminar";
             this.btEliminar.UseVisualStyleBackColor = false;
+            this.btEliminar.Click += new System.EventHandler(this.btEliminar_Click);
             // 
             // btAnadir
             // 
