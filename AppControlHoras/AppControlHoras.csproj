@@ -357,6 +357,9 @@
     <EmbeddedResource Include="EmpleadosArea\EmpleadosArea.resx">
       <DependentUpon>EmpleadosArea.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmpleadosArea\ModificarEmpleadoArea.resx">
+      <DependentUpon>ModificarEmpleadoArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Empleados\AnadirEmpleado.resx">
       <DependentUpon>AnadirEmpleado.cs</DependentUpon>
     </EmbeddedResource>
